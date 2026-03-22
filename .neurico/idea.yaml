@@ -1,0 +1,27 @@
+idea:
+  title: Simulated Sensory World
+  domain: nlp
+  hypothesis: 'When certain sensory-related objects or phenomena (e.g., flowers or
+    trash) are mentioned in a story, large language models (LLMs) activate internal
+    representations corresponding to the associated sense (such as smell), rather
+    than only producing such associations post-hoc when prompted. Furthermore, the
+    representations of the five classic senses may occupy similar subspaces in LLMs,
+    and non-traditional senses may be encoded in nearby subspaces.
+
+    '
+  background:
+    description: 'In a story when certain things are mentioned, e.g., flowers or trash,
+      do ''smell'' directions light up in LLMs? Or is this all post-hoc once you ask
+      about smell? What about the other four classic senses? Are they all in a similar
+      subspace? Are there non-traditional senses encoded nearby?
+
+      '
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/gkErDB1fIh7mwpqdi2f2
+    idea_id: simulated_sensory_world_20260322_203552_fc6bc132
+    created_at: '2026-03-22T20:35:52.782832'
+    status: submitted
+    github_repo_name: sim-sensory-nlp-claude
+    github_repo_url: https://github.com/Hypogenic-AI/sim-sensory-nlp-claude
