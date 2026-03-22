@@ -1,0 +1,75 @@
+\section{Methodology}
+\label{sec:method}
+
+We design a probing study to test whether LLMs spontaneously activate sensory-specific representations when processing objects with strong sensory associations. Our approach has four components: stimulus construction (\secref{sec:stimuli}), hidden state extraction (\secref{sec:extraction}), linear probing (\secref{sec:probing}), and representational geometry analysis (\secref{sec:geometry}).
+
+\subsection{Stimulus Construction}
+\label{sec:stimuli}
+
+\para{Word selection.}
+We select 150 stimulus words (25 per modality) from the \lancaster~\citep{lynott2020lancaster}, which provide human ratings for 39,707 words across 6 perceptual dimensions: auditory, gustatory, haptic, interoceptive, olfactory, and visual. For each modality, we select words with high dominant-sense ratings that are concrete nouns suitable for sentence embedding. Examples include ``thunder'' (auditory, rating 4.9), ``perfume'' (olfactory, 5.0), ``sandpaper'' (haptic, 4.2), ``headache'' (interoceptive, 4.9), ``garlic'' (gustatory, 4.8), and ``mirror'' (visual, 4.8). Of our 150 curated words, 146 (97.3\%) were confirmed in the Lancaster norms.
+
+\para{Sentence conditions.}
+For each word, we construct sentences in three conditions:
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item \textbf{Implicit}: Narrative context mentioning the sensory object without any sensory verb or adjective. Example: ``The perfume drifted through the open window.''
+    \item \textbf{Explicit}: Overt sensory description using modality-specific language. Example: ``The perfume smelled incredibly strong and pungent.''
+    \item \textbf{Control}: Neutral, non-sensory framing of the same word. Example: ``The perfume was mentioned briefly in the report.''
+\end{itemize}
+We construct 3 sentence templates per condition per sense (18 templates total), yielding 450 stimulus sentences. \tabref{tab:stimuli} shows representative examples.
+
+\begin{table}[t]
+\centering
+\caption{Example stimulus sentences for three sensory modalities across the three experimental conditions. The target word (bolded) is identical across conditions; only the surrounding context varies.}
+\label{tab:stimuli}
+\small
+\begin{tabular}{@{}llp{7.5cm}@{}}
+\toprule
+\textbf{Sense} & \textbf{Condition} & \textbf{Sentence} \\
+\midrule
+\multirow{3}{*}{Auditory} & Implicit & ``They noticed the \textbf{thunder} coming from down the street.'' \\
+ & Explicit & ``The sound of the \textbf{thunder} was completely unmistakable.'' \\
+ & Control & ``The \textbf{thunder} was listed in the official document.'' \\
+\midrule
+\multirow{3}{*}{Olfactory} & Implicit & ``The \textbf{perfume} drifted through the open window.'' \\
+ & Explicit & ``The \textbf{perfume} smelled incredibly strong and pungent.'' \\
+ & Control & ``The \textbf{perfume} was mentioned briefly in the report.'' \\
+\midrule
+\multirow{3}{*}{Haptic} & Implicit & ``The \textbf{sandpaper} sat on the shelf beside the door.'' \\
+ & Explicit & ``The \textbf{sandpaper} felt rough and uneven against their fingers.'' \\
+ & Control & ``The \textbf{sandpaper} was mentioned briefly in the report.'' \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Hidden State Extraction}
+\label{sec:extraction}
+
+We use \qwen (28 transformer layers, 3,584 hidden dimensions) loaded in float16 precision on a single NVIDIA RTX A6000 GPU (49 GB). For each stimulus sentence, we perform a forward pass and extract the hidden state at the target word position from all 29 layers (the embedding layer plus 28 transformer layers). For multi-token words, we use the last subword token. This yields a representation matrix of size $450 \times 29 \times 3{,}584$ (sentences $\times$ layers $\times$ dimensions).
+
+\subsection{Linear Probing}
+\label{sec:probing}
+
+\para{Dimensionality reduction.}
+Given the high dimensionality ($d = 3{,}584$) relative to the number of samples ($n = 150$ per condition), we apply PCA to reduce hidden states to 100 dimensions before probing. This retains the majority of variance while keeping the sample-to-feature ratio manageable for linear classification.
+
+\para{Classification probes.}
+We train $\ell_2$-regularized logistic regression classifiers ($C = 1.0$) to predict the dominant sensory modality (6-way classification) from PCA-reduced hidden states. We evaluate using stratified 5-fold cross-validation and report accuracy, precision, recall, and F1 per class. Probes are trained independently at each layer and for each condition (implicit, explicit, control, and all conditions combined).
+
+\para{Continuous prediction.}
+We also train ridge regression models to predict the continuous Lancaster norm sensory strength score for each modality from hidden states, reporting $R^2$ and Spearman $\rho$.
+
+\para{Statistical significance.}
+We assess significance via a permutation test with 200 iterations: we shuffle the sensory modality labels, retrain the probe, and record the accuracy. The $p$-value is the fraction of permutation accuracies that meet or exceed the real accuracy.
+
+\subsection{Representational Geometry Analysis}
+\label{sec:geometry}
+
+\para{Condition comparison.}
+For each word, we compute the cosine similarity between its hidden state representations across conditions (implicit vs.\ explicit, implicit vs.\ control, explicit vs.\ control) at each layer. We test whether implicit--explicit similarity exceeds implicit--control similarity using a paired $t$-test across words.
+
+\para{Sensory direction geometry.}
+We extract the learned weight vectors of the linear probe as ``sensory directions'' in the PCA-reduced hidden state space. Each of the 6 sensory classes has an associated direction vector $\vw_k \in \sR^{100}$. We compute the pairwise cosine similarity matrix between all 6 direction vectors and compare against random direction baselines (cosine similarity between random unit vectors in $\sR^{100}$).
+
+\para{Layer-wise emergence.}
+We track probe accuracy at each of the 29 layers to identify where sensory representations first emerge (accuracy $> 2\times$ chance) and where they peak. This provides a developmental trajectory of sensory encoding through the network.

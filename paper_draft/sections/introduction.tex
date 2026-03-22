@@ -1,0 +1,24 @@
+\section{Introduction}
+\label{sec:intro}
+
+When you read ``the garden was full of roses,'' you smell them. This involuntary sensory activation is a hallmark of human language comprehension~\citep{barsalou1999perceptual}---but does anything analogous happen inside a large language model? If an LLM processes the word ``thunder,'' does its internal representation shift toward an auditory direction, even when the surrounding text says nothing about sound?
+
+\para{Why this matters.}
+The question strikes at the heart of the symbol grounding debate~\citep{harnad1990symbol}. A growing body of work shows that LLMs can predict human sensory similarity judgments~\citep{marjieh2023large}, produce sensory language in creative writing~\citep{hicke2025zero}, and align with vision and audio encoders under explicit prompting~\citep{wang2025words}. Yet a fundamental gap remains: these results demonstrate that LLMs \emph{can} produce sensory associations when asked, but not that they \emph{spontaneously} activate them during ordinary language processing. The distinction matters because spontaneous activation would suggest that LLMs build an implicit sensory model of the world from text alone---a ``simulated sensory world''---rather than merely retrieving associations on demand.
+
+\para{The gap.}
+Prior work has studied explicit sensory prompting~\citep{wang2025words}, sensory language generation~\citep{hicke2025zero}, and prompted sensory judgments~\citep{marjieh2023large, lee2025exploring}. However, no study has systematically tested whether sensory representations activate \emph{implicitly} when LLMs process objects with strong sensory associations in narrative context. Moreover, existing studies typically examine one or two modalities; a comprehensive analysis of all five classic senses plus non-traditional senses (\eg interoception) within a single representational framework is lacking.
+
+\para{Our approach.}
+We construct 450 stimulus sentences embedding 150 sensory words (25 per modality) in three conditions: \emph{implicit} (narrative context with no sensory verbs, \eg ``The perfume drifted through the open window''), \emph{explicit} (overt sensory description, \eg ``The perfume smelled incredibly strong''), and \emph{control} (neutral framing, \eg ``The perfume was mentioned in the report''). We extract hidden states from \qwen at all 29 layers and train linear probes to decode the dominant sensory modality. \figref{fig:overview} illustrates the experimental pipeline.
+
+\para{Key results.}
+Linear probes decode sensory modality at \textbf{90.0\%} accuracy in the implicit condition---$5.4\times$ above the 16.7\% chance level---and at 92.7\% in the explicit condition, with permutation-test significance at $p = 0.005$. Implicit and explicit representations are highly similar (cosine similarity $= 0.822$), significantly more so than implicit and control representations ($p = 6.1 \times 10^{-20}$). The six senses form mutually opposing directions in representation space (mean pairwise cosine $= -0.20$), and interoception participates in the same geometric structure as the classic five senses.
+
+\para{Contributions.} We make the following contributions:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We demonstrate that LLMs spontaneously activate sensory-specific representations when processing sensory-laden objects, even without explicit sensory language---achieving 90\% linear probe accuracy in the implicit condition.
+    \item We show that implicit and explicit sensory mentions activate overlapping internal representations, suggesting a persistent sensory encoding rather than post-hoc retrieval.
+    \item We characterize the geometry of the sensory subspace, revealing that six modalities (including interoception) form a structured simplex of mutually opposing directions.
+    \item We release our stimulus set, probing pipeline, and all experimental code to support reproducibility and future work on sensory representations in language models.
+\end{itemize}

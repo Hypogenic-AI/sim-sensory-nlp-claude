@@ -1,0 +1,828 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .claude/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Simulated Sensory World: Do LLMs Spontaneously Activate Sensory Representations?
+
+## 1. Executive Summary
+
+We investigated whether large language models (LLMs) spontaneously activate internal representations corresponding to sensory modalities when processing sensory-laden text. Using Qwen2.5-7B, we extracted hidden states for 150 words across six sensory modalities (auditory, gustatory, haptic, interoceptive, olfactory, visual) in three conditions: implicit narrative context, explicit sensory description, and neutral control.
+
+**Key finding**: Linear probes achieve 87-93% accuracy at decoding the dominant sensory modality from hidden states — even in the implicit condition where no sensory language is used — demonstrating that LLMs spontaneously activate sensory representations when processing sensory-laden objects. The five classic senses plus interoception occupy distinct, negatively-correlated directions in representation space, forming a structured sensory subspace.
+
+**Practical implications**: LLMs encode rich sensory structure from text alone, which could be leveraged for improved multimodal alignment, sensory-aware text generation, and understanding the representations learned by language models.
+
+## 2. Goal
+
+**Hypothesis**: When sensory-related objects (e.g., flowers, garbage, thunder) are mentioned in narrative text, LLMs activate internal representations corresponding to the associated sense, rather than only producing such associations post-hoc when explicitly prompted. Furthermore, the five classic senses may occupy related subspaces, with non-traditional senses encoded nearby.
+
+**Why this matters**: This question addresses whether LLMs build &#34;simulated sensory worlds&#34; from text alone — a fundamental question about what these models learn and whether text-only training suffices for grounded understanding of sensory experience.
+
+**Expected impact**: Results inform debates on embodied cognition in AI, guide multimodal alignment research, and may improve sensory-aware NLP applications.
+
+## 3. Data Construction
+
+### Dataset Description
+- **Source**: Lancaster Sensorimotor Norms (Lynott et al., 2020) — 39,707 words rated on 6 perceptual and 5 action dimensions by human participants.
+- **Stimulus words**: 150 curated words (25 per sense) selected for high dominant-sense ratings and natural sentence fit. Words are concrete nouns/phenomena (e.g., &#34;thunder&#34; for auditory, &#34;perfume&#34; for olfactory, &#34;sandpaper&#34; for haptic).
+
+### Example Samples
+
+| Word | Sense | Implicit | Explicit | Control |
+|------|-------|----------|----------|---------|
+| thunder | Auditory | &#34;They noticed the thunder coming from down the street.&#34; | &#34;The sound of the thunder was completely unmistakable.&#34; | &#34;The thunder was listed in the official document.&#34; |
+| perfume | Olfactory | &#34;The perfume drifted through the open window.&#34; | &#34;The perfume smelled incredibly strong and pungent.&#34; | &#34;The perfume was mentioned briefly in the report.&#34; |
+| sandpaper | Haptic | &#34;The sandpaper sat on the shelf beside the door.&#34; | &#34;The sandpaper felt rough and uneven against their fingers.&#34; | &#34;The sandpaper was mentioned briefly in the report.&#34; |
+
+### Data Quality
+- 146/150 curated words found in Lancaster norms (97.3%)
+- All 6 sensory modalities have 25 words each
+- 3 conditions per word = 450 total stimuli
+- Top-scoring words per sense: whistle (4.9 auditory), perfume (5.0 olfactory), headache (4.9 interoceptive), mirror (4.8 visual), garlic (4.8 gustatory), sandpaper (4.2 haptic)
+
+### Preprocessing Steps
+1. Selected 25 high-dominance words per sense from Lancaster norms (manually curated for noun-like usage)
+2. Constructed 3 sentence templates per condition per sense (implicit narrative, explicit sensory, neutral control)
+3. Generated 450 stimulus sentences total
+4. Tokenized sentences and identified target word positions for hidden state extraction
+
+## 4. Experiment Description
+
+### Methodology
+
+#### High-Level Approach
+We used mechanistic interpretability techniques — specifically linear probing of hidden states — to determine whether sensory modality information is encoded in LLM representations. This approach is well-established in the literature (Hicke et al. 2025, Ngo &amp; Kim 2024, Merullo et al. 2025) and directly tests whether sensory information is *present* in the representations, not just producible via prompting.
+
+#### Why This Method?
+Linear probing is the gold standard for testing whether information is &#34;encoded&#34; in neural network representations. If a linear probe can decode sensory modality from hidden states, the information must be linearly accessible — a strong criterion that avoids the criticism of nonlinear probes potentially memorizing the training data.
+
+### Implementation Details
+
+#### Tools and Libraries
+| Library | Version | Purpose |
+|---------|---------|---------|
+| PyTorch | 2.10.0 | Model loading and inference |
+| Transformers | 5.3.0 | Qwen2.5-7B model and tokenizer |
+| scikit-learn | latest | Linear probing, PCA, evaluation |
+| matplotlib/seaborn | latest | Visualization |
+| scipy | latest | Statistical tests |
+
+#### Model
+- **Qwen2.5-7B** (Qwen/Qwen2.5-7B)
+- 28 transformer layers, 3584 hidden dimensions
+- Float16 precision on NVIDIA RTX A6000 (49GB)
+- Chosen for consistency with Wang et al. (2025) who used the Qwen family
+
+#### Hyperparameters
+| Parameter | Value | Selection Method |
+|-----------|-------|------------------|
+| PCA dimensions | 100 | Max feasible given n_samples=150 per condition |
+| Logistic Regression C | 1.0 | Default (unregularized) |
+| CV folds | 5 | Standard stratified k-fold |
+| Permutation tests | 200 | Balance of power and speed |
+| Random seed | 42 | Fixed for reproducibility |
+
+### Experimental Protocol
+
+#### Experiment 1: Linear Probing for Sensory Modality
+- Task: 6-way classification of dominant sensory modality from hidden states
+- Evaluated at each of 29 layers (embedding + 28 transformer layers)
+- Tested in 4 conditions: implicit, explicit, control, and all combined
+- Significance assessed via 200-iteration permutation test
+
+#### Experiment 2: Implicit vs. Explicit Activation Comparison
+- For each word, computed cosine similarity between its hidden states across conditions
+- Compared implicit-explicit similarity vs. implicit-control similarity
+- Tested with paired t-test
+
+#### Experiment 3: Sensory Subspace Geometry
+- Extracted probe weight vectors as &#34;sensory directions&#34; in hidden state space
+- Computed pairwise cosine similarity matrix between all 6 sense directions
+- Compared classic sense inter-similarity to interoceptive-to-classic similarity
+- Baseline: random direction cosine similarity
+
+#### Experiment 4: Continuous Sensory Strength Prediction
+- Ridge regression predicting Lancaster norm continuous scores from hidden states
+- R² and Spearman correlation for each sensory dimension
+
+#### Experiment 5: Layer-wise Emergence Analysis
+- Tracked per-sense probe accuracy across all 29 layers
+- Identified emergence and peak layers for each sense
+
+#### Reproducibility Information
+- Random seed: 42 (numpy, sklearn)
+- Hardware: NVIDIA RTX A6000 (49GB VRAM)
+- Single run (deterministic with fixed seed)
+- Execution time: ~3 minutes for hidden state extraction, ~5 minutes for all experiments
+
+### Raw Results
+
+#### Experiment 1: Probe Accuracy by Condition
+
+| Condition | Best Layer | Peak Accuracy | Chance |
+|-----------|-----------|---------------|--------|
+| Implicit | 3 | 0.900 | 0.167 |
+| Explicit | 3 | 0.927 | 0.167 |
+| Control | 28 | 0.720 | 0.167 |
+| All combined | 28 | 0.904 | 0.167 |
+
+**Permutation test** (all conditions, layer 28): real accuracy = 0.904, permutation mean = 0.167 ± 0.019, **p = 0.005**.
+
+#### Per-Sense Classification (All Conditions, Layer 28)
+
+| Sense | Precision | Recall | F1 |
+|-------|-----------|--------|-----|
+| Auditory | 0.90 | 0.95 | 0.92 |
+| Gustatory | 0.86 | 0.92 | 0.89 |
+| Haptic | 0.90 | 0.93 | 0.92 |
+| Interoceptive | 0.99 | 0.96 | 0.97 |
+| Olfactory | 0.90 | 0.76 | 0.83 |
+| Visual | 0.88 | 0.91 | 0.89 |
+
+#### Per-Sense Classification (Implicit Only, Layer 28)
+
+| Sense | Precision | Recall | F1 |
+|-------|-----------|--------|-----|
+| Auditory | 0.96 | 0.96 | 0.96 |
+| Gustatory | 0.95 | 0.72 | 0.82 |
+| Haptic | 0.79 | 0.88 | 0.83 |
+| Interoceptive | 0.86 | 1.00 | 0.93 |
+| Olfactory | 0.83 | 0.76 | 0.79 |
+| Visual | 0.85 | 0.88 | 0.86 |
+
+#### Experiment 2: Cosine Similarity Between Conditions
+
+| Comparison | Mean Cosine Similarity |
+|-----------|----------------------|
+| Implicit vs. Explicit | 0.822 |
+| Implicit vs. Control | 0.767 |
+| Explicit vs. Control | 0.763 |
+
+Paired t-test (implicit-explicit vs. implicit-control): mean diff = 0.055, t = 10.63, **p = 6.1e-20**.
+
+#### Experiment 3: Sensory Direction Cosine Similarity
+
+|  | Aud. | Gust. | Hapt. | Inter. | Olf. | Vis. |
+|--|------|-------|-------|--------|------|------|
+| **Auditory** | 1.000 | -0.228 | -0.199 | -0.165 | -0.226 | -0.192 |
+| **Gustatory** | -0.228 | 1.000 | -0.162 | -0.214 | -0.150 | -0.236 |
+| **Haptic** | -0.199 | -0.162 | 1.000 | -0.182 | -0.243 | -0.221 |
+| **Interoceptive** | -0.165 | -0.214 | -0.182 | 1.000 | -0.196 | -0.190 |
+| **Olfactory** | -0.226 | -0.150 | -0.243 | -0.196 | 1.000 | -0.194 |
+| **Visual** | -0.192 | -0.236 | -0.221 | -0.190 | -0.194 | 1.000 |
+
+- Classic inter-sense similarity: mean = -0.205 ± 0.030
+- Interoceptive-to-classic similarity: mean = -0.189 ± 0.016
+- Random direction baseline: mean = -0.001 ± 0.100
+
+#### Experiment 4: Continuous Prediction R²
+
+| Sense | R² | Spearman ρ | p-value |
+|-------|-----|-----------|---------|
+| Auditory | 0.438 | 0.569 | 4.95e-40 |
+| Gustatory | 0.475 | 0.581 | 4.66e-42 |
+| Haptic | 0.365 | 0.646 | 1.69e-54 |
+| Interoceptive | 0.646 | 0.480 | 2.51e-27 |
+| Olfactory | 0.566 | 0.726 | 7.76e-75 |
+| Visual | 0.376 | 0.695 | 3.45e-66 |
+
+#### Experiment 5: Emergence Layers
+
+| Sense | Emerges at Layer | Peak Layer | Peak Accuracy |
+|-------|-----------------|------------|---------------|
+| Auditory | 0 | 0 | 1.000 |
+| Gustatory | 1 | 25 | 0.960 |
+| Haptic | 1 | 24 | 0.960 |
+| Interoceptive | 1 | 16 | 0.987 |
+| Olfactory | 1 | 9 | 0.800 |
+| Visual | 1 | 27 | 0.933 |
+
+### Visualizations
+
+All plots saved to `results/plots/`:
+- `layer_accuracy_curves.png` — Probe accuracy across layers by condition
+- `confusion_matrix.png` — Sense classification confusion matrix
+- `condition_comparison.png` — Peak accuracy comparison across conditions
+- `implicit_vs_explicit_similarity.png` — Cosine similarity curves across layers
+- `sense_direction_similarity.png` — Pairwise sense direction cosine similarity heatmap
+- `pca_by_condition.png` — PCA visualization of hidden states by sense and condition
+- `sense_directions_pca.png` — PCA of learned sensory direction vectors
+- `continuous_prediction.png` — Scatter plots for continuous sensory strength prediction
+- `layerwise_per_sense.png` — Per-sense accuracy emergence across layers
+
+## 5. Result Analysis
+
+### Key Findings
+
+1. **LLMs spontaneously activate sensory representations (H1 supported)**: Linear probes decode the dominant sensory modality at 87% accuracy even in the implicit condition — where sentences mention sensory objects without any explicit sensory language (e.g., &#34;The perfume drifted through the open window&#34; contains no smell verb). This is 5.2x above chance (16.7%).
+
+2. **Implicit activation is as strong as explicit activation (H2 supported)**: The implicit condition (90.0% at best layer) actually achieves comparable accuracy to the explicit condition (92.7%). Crucially, the control condition with neutral templates (&#34;The thunder was listed in the official document&#34;) achieves 72.0% — still 4.3x above chance. This means even minimal context around a sensory word activates the associated modality.
+
+3. **Implicit and explicit conditions activate overlapping representations**: Cosine similarity between implicit and explicit hidden states (0.822) is significantly higher than between implicit and control states (0.767), with p = 6.1e-20. This suggests implicit and explicit sensory mentions activate the *same* underlying sensory subspace.
+
+4. **Senses form distinct, negatively-correlated directions (H3 partially supported)**: All pairwise cosine similarities between sense direction vectors are negative (-0.15 to -0.24), compared to ~0 for random directions. This means the senses are encoded as *mutually opposing* directions — knowing something is &#34;auditory&#34; pushes it away from &#34;gustatory,&#34; etc. The senses don&#39;t occupy a shared subspace; they form a structured multiplex of distinct directions.
+
+5. **Interoception is encoded alongside classic senses (H4 supported)**: The interoceptive-to-classic similarity (-0.189 ± 0.016) is comparable in magnitude to the classic inter-sense similarity (-0.205 ± 0.030). Interoception participates in the same structured sensory geometry as the five classic senses, suggesting non-traditional senses are encoded in the same representational framework.
+
+6. **Continuous sensory strength is linearly decodable**: Ridge regression predicts Lancaster norm sensory scores with R² = 0.37-0.65 and highly significant Spearman correlations (ρ = 0.48-0.73, all p &lt; 1e-26). Olfactory scores are the best predicted (R² = 0.57, ρ = 0.73), despite smell being the &#34;understudied&#34; modality.
+
+7. **Sensory representations emerge early**: All senses are decodable above 2x chance by layer 1 (out of 28). Auditory representations are perfectly decodable at layer 0 (the embedding layer), suggesting auditory associations are already encoded in the token embeddings.
+
+### Hypothesis Testing Results
+
+| Hypothesis | Result | Evidence |
+|-----------|--------|---------|
+| H1: Probes decode sensory modality above chance | **Strongly supported** | 87-90% accuracy vs 16.7% chance, p=0.005 |
+| H2: Implicit activation, not just post-hoc | **Supported** | Implicit (90%) ≈ explicit (93%), both &gt;&gt; control (72%) |
+| H3: Five senses in related subspace | **Partially supported** — distinct but structured | Negative pairwise cosine (~-0.20), forming opposing directions |
+| H4: Non-traditional senses nearby | **Supported** | Interoceptive similarity comparable to classic inter-sense |
+
+### Surprises and Insights
+
+1. **Implicit outperforms at early layers**: At layer 3, implicit accuracy (90.0%) actually exceeds control (72.0%) by a larger margin than explicit does. This suggests early layers encode &#34;what this object IS&#34; (including sensory associations) before later layers process the explicit sensory verbs.
+
+2. **Negative sense correlations**: We expected positive inter-sense similarity (a &#34;shared sensory subspace&#34;), but instead found the senses form negatively correlated directions. This is consistent with a simplex-like structure where each sense occupies its own vertex, maximally distinguishable from all others.
+
+3. **Olfactory is the best-predicted continuous dimension**: Despite being called &#34;understudied,&#34; olfactory scores achieved the highest R² (0.57) and Spearman ρ (0.73) in continuous prediction. This suggests smell is actually well-encoded in LLMs — consistent with the observation that smell is linguistically distinctive (few words are strongly olfactory, so the model can specialize).
+
+4. **Auditory at layer 0**: Perfect decoding of auditory words at the embedding layer suggests that auditory associations are a fundamental property of the word embeddings, not learned through contextual processing.
+
+### Error Analysis
+
+The most common confusion patterns (from the confusion matrix):
+- Olfactory ↔ Gustatory: These senses share real-world overlap (smell and taste are physically connected in human perception)
+- Haptic ↔ Visual: Some objects are strongly both (e.g., &#34;glass&#34; is visual and haptic)
+- Olfactory has the lowest recall (76%), likely because olfactory words (perfume, smoke) also have strong visual associations
+
+### Limitations
+
+1. **Word-level, not true narrative comprehension**: Our stimuli are single sentences with target words. Longer narrative passages might show different patterns.
+2. **Curated word lists**: The 25 words per sense were manually selected; a larger, automatically-selected set might give different results.
+3. **Single model**: We tested only Qwen2.5-7B. Different architectures may show different sensory encoding patterns.
+4. **PCA dimensionality reduction**: Reducing from 3584 to 100 dimensions may lose some signal. Full-dimensional probing was too slow for this study.
+5. **Confound: word identity**: The probe may partially leverage word identity rather than sensory features per se. However, the high accuracy on held-out folds (CV) and the condition-dependent patterns suggest genuine sensory encoding beyond word identity.
+6. **No true &#34;post-hoc&#34; condition**: We tested implicit vs. explicit, but didn&#39;t test a condition where the model is *asked* about smell (e.g., &#34;What does this smell like?&#34;) — the original question&#39;s &#34;post-hoc&#34; framing.
+
+## 6. Conclusions
+
+### Summary
+LLMs spontaneously activate internal representations of sensory modalities when processing objects with strong sensory associations — even without explicit sensory language. A simple linear probe can decode which of six senses (including interoception) is implicitly activated with up to 90% accuracy, far above the 16.7% chance level. The six senses form a structured representational geometry with distinct, mutually opposing directions, and non-traditional senses participate in this same framework.
+
+### Implications
+- **For cognitive science**: Text-only models develop sensory-specific representations from linguistic co-occurrence alone, supporting the idea that grounding is not strictly necessary for some form of sensory knowledge.
+- **For NLP practitioners**: LLM hidden states contain linearly accessible sensory information that could be used for sensory-aware text generation, content analysis, or multimodal bridging.
+- **For the original question**: Yes, when &#34;flowers&#34; or &#34;trash&#34; appear in text, the smell direction *does* light up in LLMs — and it happens implicitly, not just when you ask about smell.
+
+### Confidence in Findings
+High confidence in the core finding (sensory decodability). The effect sizes are large (5x chance) and highly significant (p = 0.005). The condition comparisons (implicit vs. control) are robustly significant (p = 6.1e-20). Lower confidence in the specific geometric structure (negative correlations) — this depends on the probe architecture and could change with different regularization.
+
+## 7. Next Steps
+
+### Immediate Follow-ups
+1. **True narrative passages**: Use paragraphs from novels/stories rather than template sentences to test if sensory activation persists in longer context.
+2. **Post-hoc prompting condition**: Add a condition where the model is explicitly asked &#34;What does this smell/sound like?&#34; to compare with implicit activation.
+3. **Multi-model comparison**: Test LLaMA, GPT-2, Mistral, and multimodal models to see if sensory encoding is universal.
+
+### Alternative Approaches
+- Use generative representations (Wang et al. 2025) instead of single-token hidden states
+- Train nonlinear probes to capture more complex sensory encoding
+- Use contrastive methods to learn sensory directions without labels
+
+### Broader Extensions
+- Test whether sensory representations influence downstream generation (do &#34;smell-activated&#34; states produce smell-related text?)
+- Investigate proprioception and other non-traditional senses beyond interoception
+- Study developmental trajectory across model scales (does sensory encoding emerge with scale?)
+
+### Open Questions
+- Why are auditory representations present in the embedding layer?
+- Is the negative inter-sense correlation structure universal across models?
+- Does RLHF training (as Hicke et al. 2025 suggest) suppress sensory activation?
+
+## References
+
+1. Wang, S. L., Isola, P., &amp; Cheung, B. (2025). Words That Make Language Models Perceive. arXiv:2510.02425.
+2. Hicke, Hamilton, &amp; Mimno (2025). The Zero Body Problem: Probing LLM Use of Sensory Language. arXiv:2504.06393.
+3. Marjieh, R. et al. (2023). Large language models predict human sensory judgments across six modalities. arXiv:2302.01308.
+4. Xu, Q. et al. (2025). Large language models without grounding recover non-sensorimotor but not sensorimotor features. Nature Human Behaviour.
+5. Lynott, D. et al. (2020). The Lancaster Sensorimotor Norms. Behavior Research Methods.
+6. Lee &amp; Lim (2024). Language Models Don&#39;t Learn the Physical Manifestation of Language. arXiv:2402.11718.
+7. Ngo &amp; Kim (2024). What Do Language Models Hear?
+8. Merullo et al. (2025). I Have No Mouth, and I Must Rhyme. arXiv:2508.02527.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Simulated Sensory World
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+When humans read &#34;the garden was full of roses,&#34; we involuntarily activate olfactory imagery — we &#34;smell&#34; the roses even without being asked. If LLMs similarly activate sensory representations during narrative comprehension (not just when explicitly prompted about smell), it would fundamentally change our understanding of what these models learn from text alone. This has implications for AI safety (do models have proto-experiences?), cognitive science (is embodied grounding necessary for sensory concepts?), and practical NLP (can we leverage implicit sensory representations for better multimodal alignment?).
+
+### Gap in Existing Work
+- Wang et al. (2025) showed explicit sensory cues (&#34;imagine seeing&#34;) steer LLM representations, but did not test **implicit** activation from narrative objects.
+- Hicke et al. (2025) measured sensory language usage and probed for sensory classification ability, but didn&#39;t test whether sensory representations activate during story comprehension.
+- No prior work systematically compares **all five senses + non-traditional senses** in terms of subspace geometry within a single model.
+- Smell and taste are drastically understudied relative to vision and audition.
+
+### Our Novel Contribution
+1. Test whether sensory representations activate **implicitly** when LLMs process sensory-laden objects in narrative context (without explicit sensory prompts).
+2. Compare implicit vs. explicit activation to determine if sensory representations are &#34;always on&#34; or only produced post-hoc.
+3. Map the subspace geometry of all five classic senses plus non-traditional senses (interoception, proprioception).
+4. Use Lancaster Sensorimotor Norms as ground truth to select stimuli and validate findings.
+
+### Experiment Justification
+- **Experiment 1 (Linear Probing)**: Can we decode which sensory modality is implicitly activated from hidden states when the model processes sensory-laden words in context? This directly tests the core hypothesis.
+- **Experiment 2 (Implicit vs. Explicit)**: Compare hidden states when processing &#34;the roses bloomed&#34; (implicit smell) vs. &#34;the roses smelled sweet&#34; (explicit smell) vs. &#34;describe the smell of roses&#34; (prompted). Tests whether activation is spontaneous or post-hoc.
+- **Experiment 3 (Subspace Geometry)**: Use PCA and cosine similarity to map how the five senses relate in representation space, and whether non-traditional senses cluster nearby.
+
+## Research Question
+Do LLMs spontaneously activate sensory-specific internal representations when processing objects with strong sensory associations (e.g., flowers → smell, thunder → sound), or are these associations only produced post-hoc when the model is explicitly asked about a sense? Do the five classic senses occupy a shared subspace, and are non-traditional senses encoded nearby?
+
+## Hypothesis Decomposition
+- H1: Linear probes can decode the dominant sensory modality from LLM hidden states when processing sensory-laden words in narrative context (above chance).
+- H2: Sensory activation occurs implicitly (from object mention alone), not only when explicitly prompted about the relevant sense.
+- H3: The five classic senses (visual, auditory, olfactory, gustatory, haptic) occupy geometrically related subspaces (high inter-sense cosine similarity of probe directions).
+- H4: Non-traditional senses (interoception, proprioception) are encoded in nearby but distinct subspaces.
+
+## Proposed Methodology
+
+### Approach
+Extract hidden-state representations from an open-weight LLM (LLaMA-3.1-8B or Qwen2.5-7B) processing carefully constructed stimuli. Use Lancaster Sensorimotor Norms to select high-association words for each modality. Train linear probes on hidden states to classify dominant sense. Compare implicit vs. explicit conditions. Analyze subspace geometry via PCA and cosine similarity.
+
+### Experimental Steps
+1. Load Lancaster Sensorimotor Norms; select top-N words per sensory modality (high dominant-sense score, low cross-modal scores).
+2. Construct stimulus sentences in three conditions: (a) implicit narrative (&#34;The garden was full of [roses]&#34;), (b) explicit sensory (&#34;The [roses] smelled sweet&#34;), (c) control (neutral context with the same word).
+3. Load LLM and extract hidden states at the target word position across all layers.
+4. Train linear probes (logistic regression) to classify dominant sensory modality from hidden states.
+5. Compare probe accuracy across conditions and layers.
+6. Extract learned probe weight vectors as &#34;sensory directions&#34; and compute pairwise cosine similarities.
+7. Visualize sensory subspace with PCA/t-SNE.
+8. Extend to non-traditional senses (interoceptive words from Lancaster norms).
+
+### Baselines
+- Random baseline (1/6 for 6 senses)
+- Shuffled labels (permutation test)
+- Bag-of-words baseline (does a simple word embedding probe work as well?)
+
+### Evaluation Metrics
+- Linear probe accuracy (per-sense and overall)
+- Probe R² for continuous sensory strength prediction
+- Cosine similarity between sensory direction vectors
+- PCA variance explained by top components
+- Statistical significance via permutation tests
+
+### Statistical Analysis Plan
+- Permutation tests (1000 permutations) for probe accuracy significance
+- Bootstrap confidence intervals for accuracy and cosine similarities
+- Bonferroni correction for multiple comparisons across senses
+
+## Expected Outcomes
+- H1 supported: Probe accuracy significantly above chance (&gt;30% for 6-way, chance=16.7%)
+- H2 supported: Probe accuracy in implicit condition comparable to explicit condition
+- H3 supported: Cosine similarity between sense directions higher than random directions
+- H4 supported: Non-traditional senses have moderate cosine similarity with classic senses
+
+## Timeline and Milestones
+1. Data preparation &amp; stimulus construction: 15 min
+2. Model loading &amp; hidden state extraction: 30 min
+3. Linear probing experiments: 30 min
+4. Implicit vs. explicit comparison: 20 min
+5. Subspace geometry analysis: 20 min
+6. Visualization &amp; documentation: 30 min
+
+## Potential Challenges
+- Model loading time/memory: Use 8B model on single GPU with float16
+- Word tokenization: Multi-token words may require aggregation strategy
+- Confounds: Word frequency, sentence position, semantic similarity may correlate with sensory modality
+- Small effect sizes: Sensory information may be subtle in hidden states
+
+## Success Criteria
+- At least one experiment produces statistically significant results
+- Clear visualizations showing sensory subspace structure
+- Meaningful comparison between implicit and explicit conditions
+- Complete, reproducible analysis pipeline
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Simulated Sensory World
+
+## Research Area Overview
+
+This review examines whether large language models (LLMs) encode internal representations corresponding to human sensory modalities (sight, sound, smell, taste, touch), even though they are trained only on text. The hypothesis is that when sensory-related objects appear in text (e.g., flowers → smell, thunder → sound), LLMs activate latent sensory representations rather than merely producing associations post-hoc. Furthermore, the five classic senses may occupy similar representational subspaces, with non-traditional senses encoded nearby.
+
+This question lies at the intersection of NLP, cognitive science, and philosophy of mind — touching on the symbol grounding problem and embodied cognition debates.
+
+---
+
+## Key Papers
+
+### 1. Wang et al. (2025) — &#34;Words That Make Language Models Perceive&#34;
+- **Authors**: Sophie L. Wang, Phillip Isola, Brian Cheung (MIT)
+- **Source**: arXiv:2510.02425
+- **Key Contribution**: Demonstrates that sensory prompts (&#34;imagine seeing/hearing&#34;) can steer text-only LLM representations toward alignment with vision (DINOv2) and audio (BEATs) encoders.
+- **Methodology**:
+  - Introduces &#34;generative representations&#34; — averaged hidden states across autoregressive generation steps
+  - Uses mutual-kNN alignment to compare LLM kernel structure with sensory encoder kernels
+  - Tests Qwen3 models (0.6B–32B) on WiT and AudioCaps datasets
+- **Key Findings**:
+  - SEE cues increase vision alignment, HEAR cues increase audio alignment — modality-specific steering works
+  - Alignment increases with generation length (more tokens = more sensory elaboration)
+  - Larger models show stronger alignment and clearer modality separation
+  - Sensory-word ablation drops alignment; random sensory words don&#39;t help — *scene-appropriate* detail matters
+  - Visual prompting improves text-only VQA on MME benchmark (64.78 → 67.14)
+- **Code**: github.com/sophicle/sensory
+- **Relevance**: **Most directly relevant paper.** Provides methodology (generative representations + kernel alignment) and evidence that LLMs maintain latent sensory structure that can be controllably activated.
+
+### 2. Hicke, Hamilton &amp; Mimno (2025) — &#34;The Zero Body Problem: Probing LLM Use of Sensory Language&#34;
+- **Authors**: Cornell University
+- **Source**: arXiv:2504.06393
+- **Key Contribution**: Large-scale comparison of sensory language use between 19 LLMs and humans across 12 sensory axes.
+- **Methodology**:
+  - Extends WritingPrompts dataset with 18,000 model-generated stories
+  - Uses Lancaster Sensorimotor Norms + Brysbaert Concreteness to score texts on 12 axes
+  - IDF-weighted scoring to measure sensory language density
+  - Linear probes on BERT, RoBERTa, T5, GPT-2, Qwen to test internal sensory representation
+- **Key Findings**:
+  - All 19 models differ significantly from humans in sensory language use
+  - Gemini uses MORE sensory language; most others use LESS
+  - Linear probes show models CAN identify sensory language (R² up to 0.85 for concreteness)
+  - RLHF training may discourage sensory language use — strong correlation with Anthropic RLHF dataset
+  - &#34;The better a model understands a sensory axis, the less likely it is to use it&#34;
+- **Datasets**: WritingPrompts, Lancaster Sensorimotor Norms, Brysbaert Concreteness
+- **Relevance**: Provides key lexicons and methodology for measuring sensory content. The probing results directly support our hypothesis that LLMs have internal sensory representations.
+
+### 3. Marjieh et al. (2023) — &#34;Large language models predict human sensory judgments across six modalities&#34;
+- **Authors**: Raja Marjieh, Ilia Sucholutsky, Pol van Rijn, Nori Jacoby, Thomas L. Griffiths (Princeton/MPI)
+- **Source**: arXiv:2302.01308
+- **Key Contribution**: Shows GPT models can predict human pairwise similarity judgments across pitch, loudness, colors, consonants, taste, and timbre.
+- **Methodology**:
+  - Elicits pairwise similarity judgments from GPT-3/3.5/4 via prompt engineering
+  - Correlates with human psychophysical data across six modalities
+  - Uses MDS to recover known perceptual structures (color wheel, pitch spiral)
+- **Key Findings**:
+  - Significant correlations with human data across ALL six modalities
+  - GPT-4 achieves human inter-rater reliability on pitch (r=.92) and consonants
+  - GPT-4&#39;s multimodal training does NOT specifically help visual modality — improvements are across all modalities
+  - MDS recovers color wheel, pitch spiral, consonant articulation space
+  - GPT-4 replicates cross-linguistic differences in color naming (English vs Russian)
+- **Relevance**: Strong evidence that LLMs encode perceptual structure from text alone. Provides methodology for probing sensory representations via similarity judgments.
+
+### 4. Xu et al. (2025) — &#34;Large language models without grounding recover non-sensorimotor but not sensorimotor features&#34;
+- **Authors**: Qihui Xu et al. (Nature Human Behaviour)
+- **Key Contribution**: Systematic comparison of ~4,442 concepts between humans and LLMs across sensorimotor domains.
+- **Key Findings**:
+  - Similarity decreases from non-sensorimotor → sensory → motor domains
+  - Visual training enhances alignment in visual dimensions
+  - Highlights the &#34;embodiment gap&#34; — text-only models lag in sensory/motor domains
+- **Relevance**: Establishes the baseline limitation our research aims to investigate further.
+
+### 5. Lee &amp; Lim (2024) — &#34;Language Models Don&#39;t Learn the Physical Manifestation of Language&#34;
+- **Source**: arXiv:2402.11718
+- **Key Contribution**: H-Test benchmark for visual-auditory properties of language.
+- **Key Findings**: LLMs perform near random chance on physical manifestation tasks; chain-of-thought and scaling don&#39;t help
+- **Relevance**: Provides a counterpoint — argues for fundamental limitations in text-only sensory understanding.
+
+### 6. Ngo &amp; Kim (2024) — &#34;What Do Language Models Hear?&#34;
+- **Key Contribution**: Linear probes that retrieve audio representations from text LM representations.
+- **Methodology**: Contrastive loss aligning language and audio model representations; tests generalization to unseen objects
+- **Key Findings**: Above-chance probe generalization indicates text-only LMs encode grounded knowledge of sounds
+- **Relevance**: Direct evidence of auditory representations in text-only LMs.
+
+### 7. Lee et al. (2025) — &#34;Exploring Multimodal Perception in LLMs Through Perceptual Strength Ratings&#34;
+- **Source**: arXiv:2503.06980
+- **Key Contribution**: Evaluates 21 models on Lancaster Sensorimotor Norms ratings for 3,611 words.
+- **Key Findings**: Top models achieve 85-90% accuracy, 0.58-0.65 correlations with humans; distributional factors show minimal impact
+- **Relevance**: Comprehensive benchmark of LLM sensory perception capabilities.
+
+### 8. Wu et al. (2026) — &#34;How does fine-tuning improve sensorimotor representations in LLMs?&#34;
+- **Source**: arXiv:2603.03313
+- **Key Contribution**: Uses RSA and dimension-specific metrics to show fine-tuning can bridge the embodiment gap.
+- **Key Findings**: Sensorimotor improvements generalize across languages and related dimensions but are sensitive to learning objective
+- **Relevance**: Shows representations can be steered toward embodied patterns.
+
+### 9. Siedenburg &amp; Saitis (2023) — &#34;The language of sounds unheard&#34;
+- **Source**: arXiv:2304.07830
+- **Key Contribution**: Tests ChatGPT&#39;s ratings of musical instrument sounds on 20 semantic scales.
+- **Key Findings**: Partial correlation with human ratings; robust agreement on brightness and pitch height; comparable internal variability to humans
+- **Relevance**: Evidence of auditory-semantic structure in LLMs.
+
+### 10. Merullo et al. (2025) — &#34;I Have No Mouth, and I Must Rhyme&#34;
+- **Source**: arXiv:2508.02527
+- **Key Contribution**: Discovers internal phonetic representations in LLaMA, including a &#34;phoneme mover head&#34; and vowel chart similar to IPA.
+- **Relevance**: Shows LLMs learn rich sensory-adjacent representations (phonemes) without any auditory grounding.
+
+---
+
+## Common Methodologies
+
+1. **Probing classifiers / linear probes**: Train simple models on LLM hidden states to predict sensory properties (Hicke 2025, Ngo 2024, Merullo 2025)
+2. **Representational Similarity Analysis (RSA)**: Compare LLM representation geometry with human/sensory encoder geometry (Wu 2026, Jones 2024)
+3. **Mutual-kNN alignment**: Compare kernel structures between LLM and sensory encoders (Wang 2025)
+4. **Psychophysical similarity judgments**: Elicit pairwise similarity ratings via prompts (Marjieh 2023)
+5. **Lexicon-based scoring**: Use sensorimotor norms to measure sensory content in generated text (Hicke 2025)
+
+## Standard Baselines
+- **DINOv2** (vision encoder) and **BEATs** (audio encoder) for cross-modal alignment (Wang 2025)
+- **Lancaster Sensorimotor Norms** as ground truth for sensory ratings
+- Human inter-rater reliability as performance ceiling
+- Random/shuffled controls for probing experiments
+
+## Evaluation Metrics
+- **Mutual-kNN alignment score**: Fraction of shared k-nearest neighbors between two kernel matrices
+- **Pearson/Spearman correlation**: Between model and human sensory ratings
+- **R² of linear probes**: How well LLM hidden states predict sensory properties
+- **RSA correlation**: Representational geometry similarity
+- **Classification accuracy**: On sensory property tasks
+
+## Datasets in the Literature
+- **Lancaster Sensorimotor Norms** (Lynott et al., 2020): Used in Hicke 2025, Lee 2025, Wu 2026, Gupta 2026
+- **Brysbaert Concreteness** (Brysbaert et al., 2014): Used in Hicke 2025
+- **WritingPrompts** (Fan et al., 2018): Used in Hicke 2025 for story generation
+- **WiT** (Srinivasan et al., 2021): Used in Wang 2025 for vision alignment
+- **AudioCaps** (Kim et al., 2019): Used in Wang 2025 for audio alignment
+- **Glasgow Norms** (Scott et al., 2019): Used in Xu 2025
+
+## Gaps and Opportunities
+
+1. **Smell and taste are understudied**: Most work focuses on vision and audio. Our hypothesis about smell (flowers → olfactory) is novel and directly testable.
+2. **Story/narrative context**: The hypothesis that sensory representations activate during story comprehension (not just explicit prompting) is largely untested.
+3. **Cross-sensory subspace structure**: Whether the five senses occupy similar subspaces and whether non-traditional senses (proprioception, interoception) are encoded nearby is unexplored.
+4. **Layer-wise analysis**: Where in the network sensory representations emerge and whether they follow a consistent pattern across senses.
+5. **Implicit vs. explicit activation**: Wang 2025 uses explicit cues; testing whether implicit sensory objects (flowers, garbage) activate representations without explicit prompting is the core of our hypothesis.
+
+## Recommendations for Our Experiment
+
+- **Primary dataset**: Lancaster Sensorimotor Norms (comprehensive sensory word ratings)
+- **Methodology**: Combination of (1) probing hidden states for sensory activation when processing sensory-laden text, and (2) representational similarity analysis comparing sensory subspaces
+- **Models**: Qwen3 family (following Wang 2025) or LLaMA family (open weights, well-studied)
+- **Key baselines**: Random probes, shuffled text controls, non-sensory word controls
+- **Metrics**: Linear probe accuracy, RSA correlation, mutual-kNN alignment
+- **Code to reuse**: Wang 2025&#39;s generative representation extraction (github.com/sophicle/sensory)
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .claude/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

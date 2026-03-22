@@ -1,0 +1,9 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We investigated whether LLMs spontaneously activate sensory representations when processing sensory-laden text, or whether such associations arise only through explicit prompting. Using linear probes on \qwen hidden states, we found that sensory modality is decodable at 90\% accuracy even in implicit narrative contexts where no sensory language is used---$5.4\times$ above chance. Implicit and explicit conditions activate overlapping representations, and the six sensory modalities (including interoception) form a structured geometry of mutually opposing directions in representation space.
+
+These findings demonstrate that text-only language models build what we call a ``simulated sensory world'': a structured internal representation of sensory modalities that activates spontaneously during language processing, mirroring aspects of human involuntary sensory imagery. The sensory information is linearly accessible, emerges early in the network, and encodes both categorical identity and graded strength.
+
+\para{Future directions.}
+Three extensions would strengthen these findings. First, testing with longer narrative passages and diverse models would establish generality. Second, a post-hoc prompting condition (``What does this smell like?'') would directly compare spontaneous activation with prompted retrieval. Third, investigating whether sensory representations causally influence downstream generation---whether ``smell-activated'' states lead to smell-related text---would connect representational structure to behavioral consequences. Understanding the simulated sensory worlds inside language models may ultimately inform multimodal alignment, sensory-aware text generation, and the broader question of what it means for a model to ``understand'' the sensory world through language alone.

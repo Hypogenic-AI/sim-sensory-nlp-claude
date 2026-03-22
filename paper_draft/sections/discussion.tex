@@ -1,0 +1,43 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{LLMs Build a Simulated Sensory World}
+
+Our results provide strong evidence that LLMs spontaneously activate sensory-specific representations during language processing. The 90\% probe accuracy in the implicit condition---where sentences like ``The perfume drifted through the open window'' contain no sensory verb---demonstrates that merely mentioning a sensory object is sufficient to activate the corresponding modality direction in representation space. This goes beyond prior work showing that LLMs \emph{can} produce sensory associations when explicitly prompted~\citep{wang2025words, marjieh2023large}. The implicit activation we observe is more akin to human involuntary sensory imagery during reading~\citep{barsalou1999perceptual}: the model ``smells the roses'' whether or not you ask it to.
+
+The high cosine similarity between implicit and explicit representations ($0.822$) further supports this interpretation. The same sensory subspace is activated regardless of whether the sentence says ``the thunder rumbled'' or simply ``they noticed the thunder''---the difference is one of degree, not kind. The control condition still achieves 72\% accuracy, suggesting that even minimal, non-sensory context around a sensory word activates modality-specific representations to some extent.
+
+\subsection{The Geometry of Sensory Space}
+
+The discovery that all six sensory directions are mutually negatively correlated (mean cosine $= -0.200$) was unexpected. We had hypothesized a shared sensory subspace with positive inter-sense similarity. Instead, the senses form something closer to a simplex, where each vertex (modality) is maximally distinguishable from all others. This structure is reminiscent of how categorical features are often encoded in neural networks: via mutually opposing directions that enable clean linear separation.
+
+The functional implication is that activating one sensory modality \emph{suppresses} others in the representation. When the model processes ``thunder,'' its representation moves toward the auditory direction and away from gustatory, haptic, and other directions. This competitive structure may reflect the statistical regularities of language: words that strongly evoke one sense tend not to evoke others (thunder is auditory but not gustatory), and the model has learned to encode this mutual exclusivity geometrically.
+
+\para{Interoception as a sixth sense.}
+Interoception---the sense of internal bodily states like pain, hunger, and nausea---participates fully in the sensory geometry, with inter-sense correlations ($-0.189$) comparable to those among classic senses ($-0.205$). This suggests that text-only models encode non-traditional senses using the same representational framework as the five classic senses. The strong performance of interoceptive probes (F1 $= 0.97$) likely reflects the distinctive linguistic contexts in which interoceptive words appear.
+
+\subsection{Early Emergence and the Auditory Exception}
+
+The early emergence of sensory encoding (all senses above $2\times$ chance by layer 1) suggests that sensory associations are fundamental to how the model represents word meaning, not a late-stage phenomenon. The perfect decoding of auditory words at layer 0 (the embedding layer) is particularly striking. This may reflect the fact that auditory words like ``thunder,'' ``whistle,'' and ``siren'' have highly distinctive distributional properties: they tend to appear in specific linguistic contexts that are captured even by static embeddings. In contrast, visual words (peaking at layer 27) may require more contextual processing to disambiguate---many objects are visual, so the model needs sentence-level context to determine that vision is the \emph{dominant} modality.
+
+\subsection{Relation to Embodiment Debates}
+
+Our findings contribute to the ongoing debate about whether embodied grounding is necessary for sensory knowledge~\citep{xu2025large, lee2024language}. We show that a text-only model encodes a structured, six-dimensional sensory space that mirrors human sensory categorization. This does not resolve whether the model truly ``understands'' sensory experience, but it demonstrates that distributional statistics of language encode sufficient structure for sensory representations to emerge. In the terminology of \citet{hicke2025zero}, our model can identify sensory content but may not spontaneously generate it---an intriguing dissociation between representation and production.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Stimulus design.}
+Our stimuli are single sentences with curated target words. Longer narrative passages with emergent sensory themes (\eg a scene that evokes smell through accumulated detail rather than a single word) may show different activation patterns. The 25 words per sense, while carefully selected, represent a small sample of each modality's vocabulary.
+
+\para{Word identity confound.}
+The probe may partially leverage word identity rather than sensory features \textit{per se}. Although cross-validated accuracy and condition-dependent patterns suggest genuine sensory encoding, a stronger test would involve novel words or cross-lingual transfer. The control condition's 72\% accuracy (still well above chance) indicates that word-level information contributes to probe performance even in non-sensory contexts.
+
+\para{Single model.}
+We tested only \qwen. Different architectures (decoder-only vs.\ encoder-only), training data compositions, and model scales may yield different sensory encoding patterns. The universality of our findings across models remains an open question.
+
+\para{Dimensionality reduction.}
+PCA reduction from 3,584 to 100 dimensions, while necessary given our sample size, may discard sensory information encoded in lower-variance directions. Full-dimensional probing with larger stimulus sets could reveal additional structure.
+
+\para{No post-hoc prompting condition.}
+We compared implicit and explicit conditions but did not include a condition where the model is asked ``What does this smell like?''---the original framing of ``post-hoc'' activation. This comparison would more directly address whether implicit activation differs from prompted retrieval.

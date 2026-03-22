@@ -1,0 +1,6752 @@
+[
+  {
+    "word": "thunder",
+    "sentence": "They noticed the thunder coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.705882353,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.352941176,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thunder",
+    "sentence": "The sound of the thunder was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.705882353,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.352941176,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thunder",
+    "sentence": "The thunder was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.705882353,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.352941176,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "siren",
+    "sentence": "The siren filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.3,
+      "Interoceptive": 0.4,
+      "Olfactory": 0.0,
+      "Visual": 2.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "siren",
+    "sentence": "The siren sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.3,
+      "Interoceptive": 0.4,
+      "Olfactory": 0.0,
+      "Visual": 2.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "siren",
+    "sentence": "The siren was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.3,
+      "Interoceptive": 0.4,
+      "Olfactory": 0.0,
+      "Visual": 2.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "whistle",
+    "sentence": "The whistle filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.875,
+      "Gustatory": 0.0,
+      "Haptic": 1.3125,
+      "Interoceptive": 1.0625,
+      "Olfactory": 0.0,
+      "Visual": 2.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "whistle",
+    "sentence": "The whistle sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.875,
+      "Gustatory": 0.0,
+      "Haptic": 1.3125,
+      "Interoceptive": 1.0625,
+      "Olfactory": 0.0,
+      "Visual": 2.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "whistle",
+    "sentence": "The whistle was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.875,
+      "Gustatory": 0.0,
+      "Haptic": 1.3125,
+      "Interoceptive": 1.0625,
+      "Olfactory": 0.0,
+      "Visual": 2.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bell",
+    "sentence": "They noticed the bell coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.055555556,
+      "Gustatory": 0.055555556,
+      "Haptic": 1.388888889,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.055555556,
+      "Visual": 2.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bell",
+    "sentence": "The sound of the bell was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.055555556,
+      "Gustatory": 0.055555556,
+      "Haptic": 1.388888889,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.055555556,
+      "Visual": 2.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bell",
+    "sentence": "The bell was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.055555556,
+      "Gustatory": 0.055555556,
+      "Haptic": 1.388888889,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.055555556,
+      "Visual": 2.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drum",
+    "sentence": "A distant drum broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.3,
+      "Haptic": 2.8,
+      "Interoceptive": 1.05,
+      "Olfactory": 0.4,
+      "Visual": 3.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drum",
+    "sentence": "You could hear the drum echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.3,
+      "Haptic": 2.8,
+      "Interoceptive": 1.05,
+      "Olfactory": 0.4,
+      "Visual": 3.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drum",
+    "sentence": "They discussed the drum at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.3,
+      "Haptic": 2.8,
+      "Interoceptive": 1.05,
+      "Olfactory": 0.4,
+      "Visual": 3.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "alarm",
+    "sentence": "The alarm filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.1,
+      "Gustatory": 0.0,
+      "Haptic": 0.45,
+      "Interoceptive": 2.05,
+      "Olfactory": 0.1,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "alarm",
+    "sentence": "The alarm sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.1,
+      "Gustatory": 0.0,
+      "Haptic": 0.45,
+      "Interoceptive": 2.05,
+      "Olfactory": 0.1,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "alarm",
+    "sentence": "The alarm was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.1,
+      "Gustatory": 0.0,
+      "Haptic": 0.45,
+      "Interoceptive": 2.05,
+      "Olfactory": 0.1,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horn",
+    "sentence": "The horn filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.882352941,
+      "Gustatory": 0.0,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 2.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horn",
+    "sentence": "The horn sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.882352941,
+      "Gustatory": 0.0,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 2.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horn",
+    "sentence": "The horn was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.882352941,
+      "Gustatory": 0.0,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 2.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "buzzer",
+    "sentence": "A distant buzzer broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.368421053,
+      "Gustatory": 0.0,
+      "Haptic": 1.0,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 0.0,
+      "Visual": 1.789473684
+    },
+    "in_norms": true
+  },
+  {
+    "word": "buzzer",
+    "sentence": "You could hear the buzzer echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.368421053,
+      "Gustatory": 0.0,
+      "Haptic": 1.0,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 0.0,
+      "Visual": 1.789473684
+    },
+    "in_norms": true
+  },
+  {
+    "word": "buzzer",
+    "sentence": "They discussed the buzzer at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.368421053,
+      "Gustatory": 0.0,
+      "Haptic": 1.0,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 0.0,
+      "Visual": 1.789473684
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chime",
+    "sentence": "They noticed the chime coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.117647059,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.0,
+      "Visual": 1.941176471
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chime",
+    "sentence": "The sound of the chime was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.117647059,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.0,
+      "Visual": 1.941176471
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chime",
+    "sentence": "The chime was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.117647059,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.0,
+      "Visual": 1.941176471
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gong",
+    "sentence": "The gong filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.588235294,
+      "Gustatory": 0.058823529,
+      "Haptic": 1.235294118,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 0.0,
+      "Visual": 2.470588235
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gong",
+    "sentence": "The gong sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.588235294,
+      "Gustatory": 0.058823529,
+      "Haptic": 1.235294118,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 0.0,
+      "Visual": 2.470588235
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gong",
+    "sentence": "The gong was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.588235294,
+      "Gustatory": 0.058823529,
+      "Haptic": 1.235294118,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 0.0,
+      "Visual": 2.470588235
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gunshot",
+    "sentence": "The gunshot filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.238095238,
+      "Gustatory": 0.19047619,
+      "Haptic": 0.619047619,
+      "Interoceptive": 1.238095238,
+      "Olfactory": 0.761904762,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gunshot",
+    "sentence": "The gunshot sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.238095238,
+      "Gustatory": 0.19047619,
+      "Haptic": 0.619047619,
+      "Interoceptive": 1.238095238,
+      "Olfactory": 0.761904762,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gunshot",
+    "sentence": "The gunshot was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.238095238,
+      "Gustatory": 0.19047619,
+      "Haptic": 0.619047619,
+      "Interoceptive": 1.238095238,
+      "Olfactory": 0.761904762,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "scream",
+    "sentence": "They noticed the scream coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.2,
+      "Gustatory": 0.066666667,
+      "Haptic": 0.266666667,
+      "Interoceptive": 1.133333333,
+      "Olfactory": 0.466666667,
+      "Visual": 1.8
+    },
+    "in_norms": true
+  },
+  {
+    "word": "scream",
+    "sentence": "The sound of the scream was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.2,
+      "Gustatory": 0.066666667,
+      "Haptic": 0.266666667,
+      "Interoceptive": 1.133333333,
+      "Olfactory": 0.466666667,
+      "Visual": 1.8
+    },
+    "in_norms": true
+  },
+  {
+    "word": "scream",
+    "sentence": "The scream was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.2,
+      "Gustatory": 0.066666667,
+      "Haptic": 0.266666667,
+      "Interoceptive": 1.133333333,
+      "Olfactory": 0.466666667,
+      "Visual": 1.8
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clap",
+    "sentence": "They noticed the clap coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.833333333,
+      "Interoceptive": 0.625,
+      "Olfactory": 0.0,
+      "Visual": 3.75
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clap",
+    "sentence": "The sound of the clap was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.833333333,
+      "Interoceptive": 0.625,
+      "Olfactory": 0.0,
+      "Visual": 3.75
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clap",
+    "sentence": "The clap was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.833333333,
+      "Interoceptive": 0.625,
+      "Olfactory": 0.0,
+      "Visual": 3.75
+    },
+    "in_norms": true
+  },
+  {
+    "word": "echo",
+    "sentence": "A distant echo broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.643521698,
+      "Gustatory": 0.075429285,
+      "Haptic": 0.214611302,
+      "Interoceptive": 0.615735248,
+      "Olfactory": 0.076553231,
+      "Visual": 0.159038401
+    },
+    "in_norms": true
+  },
+  {
+    "word": "echo",
+    "sentence": "You could hear the echo echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.643521698,
+      "Gustatory": 0.075429285,
+      "Haptic": 0.214611302,
+      "Interoceptive": 0.615735248,
+      "Olfactory": 0.076553231,
+      "Visual": 0.159038401
+    },
+    "in_norms": true
+  },
+  {
+    "word": "echo",
+    "sentence": "They discussed the echo at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.643521698,
+      "Gustatory": 0.075429285,
+      "Haptic": 0.214611302,
+      "Interoceptive": 0.615735248,
+      "Olfactory": 0.076553231,
+      "Visual": 0.159038401
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hiss",
+    "sentence": "They noticed the hiss coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.941176471,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hiss",
+    "sentence": "The sound of the hiss was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.941176471,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hiss",
+    "sentence": "The hiss was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.941176471,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "roar",
+    "sentence": "A distant roar broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.722222222,
+      "Gustatory": 0.0,
+      "Haptic": 0.166666667,
+      "Interoceptive": 1.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 0.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "roar",
+    "sentence": "You could hear the roar echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.722222222,
+      "Gustatory": 0.0,
+      "Haptic": 0.166666667,
+      "Interoceptive": 1.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 0.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "roar",
+    "sentence": "They discussed the roar at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.722222222,
+      "Gustatory": 0.0,
+      "Haptic": 0.166666667,
+      "Interoceptive": 1.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 0.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "howl",
+    "sentence": "The howl filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.8,
+      "Olfactory": 0.0,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "howl",
+    "sentence": "The howl sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.8,
+      "Olfactory": 0.0,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "howl",
+    "sentence": "The howl was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.6,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.8,
+      "Olfactory": 0.0,
+      "Visual": 1.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bang",
+    "sentence": "They noticed the bang coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.125,
+      "Gustatory": 0.0,
+      "Haptic": 0.5625,
+      "Interoceptive": 0.5625,
+      "Olfactory": 0.375,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bang",
+    "sentence": "The sound of the bang was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.125,
+      "Gustatory": 0.0,
+      "Haptic": 0.5625,
+      "Interoceptive": 0.5625,
+      "Olfactory": 0.375,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bang",
+    "sentence": "The bang was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.125,
+      "Gustatory": 0.0,
+      "Haptic": 0.5625,
+      "Interoceptive": 0.5625,
+      "Olfactory": 0.375,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chirp",
+    "sentence": "They noticed the chirp coming from down the street.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.684210526,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.0,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chirp",
+    "sentence": "The sound of the chirp was completely unmistakable.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.684210526,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.0,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chirp",
+    "sentence": "The chirp was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.684210526,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.0,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beep",
+    "sentence": "A distant beep broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.764705882,
+      "Gustatory": 0.0,
+      "Haptic": 0.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beep",
+    "sentence": "You could hear the beep echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.764705882,
+      "Gustatory": 0.0,
+      "Haptic": 0.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beep",
+    "sentence": "They discussed the beep at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.764705882,
+      "Gustatory": 0.0,
+      "Haptic": 0.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 0.0,
+      "Visual": 0.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ringtone",
+    "sentence": "The ringtone filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.578947368,
+      "Gustatory": 0.157894737,
+      "Haptic": 0.263157895,
+      "Interoceptive": 0.368421053,
+      "Olfactory": 0.157894737,
+      "Visual": 0.526315789
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ringtone",
+    "sentence": "The ringtone sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.578947368,
+      "Gustatory": 0.157894737,
+      "Haptic": 0.263157895,
+      "Interoceptive": 0.368421053,
+      "Olfactory": 0.157894737,
+      "Visual": 0.526315789
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ringtone",
+    "sentence": "The ringtone was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.578947368,
+      "Gustatory": 0.157894737,
+      "Haptic": 0.263157895,
+      "Interoceptive": 0.368421053,
+      "Olfactory": 0.157894737,
+      "Visual": 0.526315789
+    },
+    "in_norms": true
+  },
+  {
+    "word": "explosion",
+    "sentence": "The explosion filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.0,
+      "Gustatory": 0.1,
+      "Haptic": 0.7,
+      "Interoceptive": 0.8,
+      "Olfactory": 1.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "explosion",
+    "sentence": "The explosion sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.0,
+      "Gustatory": 0.1,
+      "Haptic": 0.7,
+      "Interoceptive": 0.8,
+      "Olfactory": 1.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "explosion",
+    "sentence": "The explosion was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.0,
+      "Gustatory": 0.1,
+      "Haptic": 0.7,
+      "Interoceptive": 0.8,
+      "Olfactory": 1.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "murmur",
+    "sentence": "The murmur filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.375,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.6875,
+      "Olfactory": 0.0,
+      "Visual": 0.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "murmur",
+    "sentence": "The murmur sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.375,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.6875,
+      "Olfactory": 0.0,
+      "Visual": 0.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "murmur",
+    "sentence": "The murmur was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.375,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.6875,
+      "Olfactory": 0.0,
+      "Visual": 0.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crackle",
+    "sentence": "The crackle filled the air as they walked through the city.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.352941176,
+      "Gustatory": 0.294117647,
+      "Haptic": 0.823529412,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.294117647,
+      "Visual": 1.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crackle",
+    "sentence": "The crackle sounded incredibly loud and startling.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.352941176,
+      "Gustatory": 0.294117647,
+      "Haptic": 0.823529412,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.294117647,
+      "Visual": 1.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crackle",
+    "sentence": "The crackle was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 3.352941176,
+      "Gustatory": 0.294117647,
+      "Haptic": 0.823529412,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.294117647,
+      "Visual": 1.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "squeak",
+    "sentence": "A distant squeak broke the silence of the night.",
+    "condition": "implicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.526315789,
+      "Gustatory": 0.0,
+      "Haptic": 0.842105263,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.052631579,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "squeak",
+    "sentence": "You could hear the squeak echoing from far away.",
+    "condition": "explicit",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.526315789,
+      "Gustatory": 0.0,
+      "Haptic": 0.842105263,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.052631579,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "squeak",
+    "sentence": "They discussed the squeak at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Auditory",
+    "sense_scores": {
+      "Auditory": 4.526315789,
+      "Gustatory": 0.0,
+      "Haptic": 0.842105263,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.052631579,
+      "Visual": 0.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chocolate",
+    "sentence": "There was chocolate on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.611111111,
+      "Gustatory": 4.555555556,
+      "Haptic": 2.444444444,
+      "Interoceptive": 1.111111111,
+      "Olfactory": 3.444444444,
+      "Visual": 3.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chocolate",
+    "sentence": "The chocolate tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.611111111,
+      "Gustatory": 4.555555556,
+      "Haptic": 2.444444444,
+      "Interoceptive": 1.111111111,
+      "Olfactory": 3.444444444,
+      "Visual": 3.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chocolate",
+    "sentence": "The chocolate was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.611111111,
+      "Gustatory": 4.555555556,
+      "Haptic": 2.444444444,
+      "Interoceptive": 1.111111111,
+      "Olfactory": 3.444444444,
+      "Visual": 3.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lemon",
+    "sentence": "There was lemon on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.65,
+      "Interoceptive": 0.75,
+      "Olfactory": 2.95,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lemon",
+    "sentence": "The lemon tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.65,
+      "Interoceptive": 0.75,
+      "Olfactory": 2.95,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lemon",
+    "sentence": "The lemon was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.65,
+      "Interoceptive": 0.75,
+      "Olfactory": 2.95,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vinegar",
+    "sentence": "There was vinegar on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 4.588235294,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 4.529411765,
+      "Visual": 3.058823529
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vinegar",
+    "sentence": "The vinegar tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 4.588235294,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 4.529411765,
+      "Visual": 3.058823529
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vinegar",
+    "sentence": "The vinegar was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 4.588235294,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.705882353,
+      "Olfactory": 4.529411765,
+      "Visual": 3.058823529
+    },
+    "in_norms": true
+  },
+  {
+    "word": "honey",
+    "sentence": "There was honey on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.326078799,
+      "Gustatory": 4.507004378,
+      "Haptic": 2.422013759,
+      "Interoceptive": 0.68699187,
+      "Olfactory": 2.789681051,
+      "Visual": 3.63902439
+    },
+    "in_norms": true
+  },
+  {
+    "word": "honey",
+    "sentence": "The honey tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.326078799,
+      "Gustatory": 4.507004378,
+      "Haptic": 2.422013759,
+      "Interoceptive": 0.68699187,
+      "Olfactory": 2.789681051,
+      "Visual": 3.63902439
+    },
+    "in_norms": true
+  },
+  {
+    "word": "honey",
+    "sentence": "The honey was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.326078799,
+      "Gustatory": 4.507004378,
+      "Haptic": 2.422013759,
+      "Interoceptive": 0.68699187,
+      "Olfactory": 2.789681051,
+      "Visual": 3.63902439
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "The cinnamon had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "The flavor of the cinnamon was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "They discussed the cinnamon at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pepper",
+    "sentence": "The pepper had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.470588235,
+      "Gustatory": 4.411764706,
+      "Haptic": 2.0,
+      "Interoceptive": 1.117647059,
+      "Olfactory": 3.411764706,
+      "Visual": 3.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pepper",
+    "sentence": "The flavor of the pepper was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.470588235,
+      "Gustatory": 4.411764706,
+      "Haptic": 2.0,
+      "Interoceptive": 1.117647059,
+      "Olfactory": 3.411764706,
+      "Visual": 3.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pepper",
+    "sentence": "They discussed the pepper at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.470588235,
+      "Gustatory": 4.411764706,
+      "Haptic": 2.0,
+      "Interoceptive": 1.117647059,
+      "Olfactory": 3.411764706,
+      "Visual": 3.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garlic",
+    "sentence": "There was garlic on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.823529412,
+      "Haptic": 2.470588235,
+      "Interoceptive": 0.941176471,
+      "Olfactory": 4.058823529,
+      "Visual": 3.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garlic",
+    "sentence": "The garlic tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.823529412,
+      "Haptic": 2.470588235,
+      "Interoceptive": 0.941176471,
+      "Olfactory": 4.058823529,
+      "Visual": 3.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garlic",
+    "sentence": "The garlic was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.823529412,
+      "Haptic": 2.470588235,
+      "Interoceptive": 0.941176471,
+      "Olfactory": 4.058823529,
+      "Visual": 3.529411765
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ginger",
+    "sentence": "There was ginger on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 1.25,
+      "Gustatory": 3.0,
+      "Haptic": 1.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 2.6875,
+      "Visual": 3.625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ginger",
+    "sentence": "The ginger tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 1.25,
+      "Gustatory": 3.0,
+      "Haptic": 1.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 2.6875,
+      "Visual": 3.625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ginger",
+    "sentence": "The ginger was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 1.25,
+      "Gustatory": 3.0,
+      "Haptic": 1.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 2.6875,
+      "Visual": 3.625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "The mint had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "The flavor of the mint was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "They discussed the mint at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mustard",
+    "sentence": "There was mustard on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.684210526,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 3.210526316,
+      "Visual": 3.736842105
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mustard",
+    "sentence": "The mustard tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.684210526,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 3.210526316,
+      "Visual": 3.736842105
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mustard",
+    "sentence": "The mustard was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.684210526,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 3.210526316,
+      "Visual": 3.736842105
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vanilla",
+    "sentence": "Someone had left vanilla next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.555555556,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.055555556,
+      "Olfactory": 3.555555556,
+      "Visual": 2.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vanilla",
+    "sentence": "The taste of the vanilla lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.555555556,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.055555556,
+      "Olfactory": 3.555555556,
+      "Visual": 2.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vanilla",
+    "sentence": "The vanilla was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.555555556,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.055555556,
+      "Olfactory": 3.555555556,
+      "Visual": 2.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "curry",
+    "sentence": "There was curry on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.263157895,
+      "Gustatory": 4.421052632,
+      "Haptic": 0.684210526,
+      "Interoceptive": 0.526315789,
+      "Olfactory": 3.684210526,
+      "Visual": 3.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "curry",
+    "sentence": "The curry tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.263157895,
+      "Gustatory": 4.421052632,
+      "Haptic": 0.684210526,
+      "Interoceptive": 0.526315789,
+      "Olfactory": 3.684210526,
+      "Visual": 3.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "curry",
+    "sentence": "The curry was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.263157895,
+      "Gustatory": 4.421052632,
+      "Haptic": 0.684210526,
+      "Interoceptive": 0.526315789,
+      "Olfactory": 3.684210526,
+      "Visual": 3.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wasabi",
+    "sentence": "There was wasabi on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.222222222,
+      "Gustatory": 3.666666667,
+      "Haptic": 1.444444444,
+      "Interoceptive": 1.388888889,
+      "Olfactory": 2.777777778,
+      "Visual": 3.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wasabi",
+    "sentence": "The wasabi tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.222222222,
+      "Gustatory": 3.666666667,
+      "Haptic": 1.444444444,
+      "Interoceptive": 1.388888889,
+      "Olfactory": 2.777777778,
+      "Visual": 3.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wasabi",
+    "sentence": "The wasabi was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.222222222,
+      "Gustatory": 3.666666667,
+      "Haptic": 1.444444444,
+      "Interoceptive": 1.388888889,
+      "Olfactory": 2.777777778,
+      "Visual": 3.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "licorice",
+    "sentence": "Someone had left licorice next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 4.411764706,
+      "Haptic": 1.823529412,
+      "Interoceptive": 0.588235294,
+      "Olfactory": 2.470588235,
+      "Visual": 2.882352941
+    },
+    "in_norms": true
+  },
+  {
+    "word": "licorice",
+    "sentence": "The taste of the licorice lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 4.411764706,
+      "Haptic": 1.823529412,
+      "Interoceptive": 0.588235294,
+      "Olfactory": 2.470588235,
+      "Visual": 2.882352941
+    },
+    "in_norms": true
+  },
+  {
+    "word": "licorice",
+    "sentence": "The licorice was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 4.411764706,
+      "Haptic": 1.823529412,
+      "Interoceptive": 0.588235294,
+      "Olfactory": 2.470588235,
+      "Visual": 2.882352941
+    },
+    "in_norms": true
+  },
+  {
+    "word": "syrup",
+    "sentence": "Someone had left syrup next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 4.6,
+      "Haptic": 2.65,
+      "Interoceptive": 0.15,
+      "Olfactory": 2.6,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "syrup",
+    "sentence": "The taste of the syrup lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 4.6,
+      "Haptic": 2.65,
+      "Interoceptive": 0.15,
+      "Olfactory": 2.6,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "syrup",
+    "sentence": "The syrup was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 4.6,
+      "Haptic": 2.65,
+      "Interoceptive": 0.15,
+      "Olfactory": 2.6,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "caramel",
+    "sentence": "The caramel had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.352941176,
+      "Haptic": 1.294117647,
+      "Interoceptive": 0.529411765,
+      "Olfactory": 2.117647059,
+      "Visual": 3.411764706
+    },
+    "in_norms": true
+  },
+  {
+    "word": "caramel",
+    "sentence": "The flavor of the caramel was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.352941176,
+      "Haptic": 1.294117647,
+      "Interoceptive": 0.529411765,
+      "Olfactory": 2.117647059,
+      "Visual": 3.411764706
+    },
+    "in_norms": true
+  },
+  {
+    "word": "caramel",
+    "sentence": "They discussed the caramel at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 4.352941176,
+      "Haptic": 1.294117647,
+      "Interoceptive": 0.529411765,
+      "Olfactory": 2.117647059,
+      "Visual": 3.411764706
+    },
+    "in_norms": true
+  },
+  {
+    "word": "molasses",
+    "sentence": "There was molasses on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.444444444,
+      "Gustatory": 3.888888889,
+      "Haptic": 2.333333333,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 2.444444444,
+      "Visual": 3.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "molasses",
+    "sentence": "The molasses tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.444444444,
+      "Gustatory": 3.888888889,
+      "Haptic": 2.333333333,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 2.444444444,
+      "Visual": 3.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "molasses",
+    "sentence": "The molasses was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.444444444,
+      "Gustatory": 3.888888889,
+      "Haptic": 2.333333333,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 2.444444444,
+      "Visual": 3.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chili",
+    "sentence": "Someone had left chili next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 4.2,
+      "Haptic": 1.95,
+      "Interoceptive": 1.0,
+      "Olfactory": 3.3,
+      "Visual": 3.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chili",
+    "sentence": "The taste of the chili lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 4.2,
+      "Haptic": 1.95,
+      "Interoceptive": 1.0,
+      "Olfactory": 3.3,
+      "Visual": 3.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chili",
+    "sentence": "The chili was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 4.2,
+      "Haptic": 1.95,
+      "Interoceptive": 1.0,
+      "Olfactory": 3.3,
+      "Visual": 3.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nutmeg",
+    "sentence": "Someone had left nutmeg next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 3.470588235,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 2.823529412,
+      "Visual": 2.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nutmeg",
+    "sentence": "The taste of the nutmeg lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 3.470588235,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 2.823529412,
+      "Visual": 2.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nutmeg",
+    "sentence": "The nutmeg was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 3.470588235,
+      "Haptic": 1.352941176,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 2.823529412,
+      "Visual": 2.352941176
+    },
+    "in_norms": true
+  },
+  {
+    "word": "paprika",
+    "sentence": "There was paprika on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.216216216,
+      "Gustatory": 3.810810811,
+      "Haptic": 1.108108108,
+      "Interoceptive": 0.351351351,
+      "Olfactory": 2.486486486,
+      "Visual": 3.432432432
+    },
+    "in_norms": true
+  },
+  {
+    "word": "paprika",
+    "sentence": "The paprika tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.216216216,
+      "Gustatory": 3.810810811,
+      "Haptic": 1.108108108,
+      "Interoceptive": 0.351351351,
+      "Olfactory": 2.486486486,
+      "Visual": 3.432432432
+    },
+    "in_norms": true
+  },
+  {
+    "word": "paprika",
+    "sentence": "The paprika was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.216216216,
+      "Gustatory": 3.810810811,
+      "Haptic": 1.108108108,
+      "Interoceptive": 0.351351351,
+      "Olfactory": 2.486486486,
+      "Visual": 3.432432432
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horseradish",
+    "sentence": "There was horseradish on the kitchen counter.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 4.2,
+      "Haptic": 0.85,
+      "Interoceptive": 0.7,
+      "Olfactory": 2.8,
+      "Visual": 2.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horseradish",
+    "sentence": "The horseradish tasted absolutely wonderful and rich.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 4.2,
+      "Haptic": 0.85,
+      "Interoceptive": 0.7,
+      "Olfactory": 2.8,
+      "Visual": 2.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "horseradish",
+    "sentence": "The horseradish was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 4.2,
+      "Haptic": 0.85,
+      "Interoceptive": 0.7,
+      "Olfactory": 2.8,
+      "Visual": 2.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "turmeric",
+    "sentence": "The turmeric had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "turmeric",
+    "sentence": "The flavor of the turmeric was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "turmeric",
+    "sentence": "They discussed the turmeric at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "clove",
+    "sentence": "Someone had left clove next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.214285714,
+      "Gustatory": 3.285714286,
+      "Haptic": 1.214285714,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.928571429,
+      "Visual": 3.071428571
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clove",
+    "sentence": "The taste of the clove lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.214285714,
+      "Gustatory": 3.285714286,
+      "Haptic": 1.214285714,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.928571429,
+      "Visual": 3.071428571
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clove",
+    "sentence": "The clove was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.214285714,
+      "Gustatory": 3.285714286,
+      "Haptic": 1.214285714,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.928571429,
+      "Visual": 3.071428571
+    },
+    "in_norms": true
+  },
+  {
+    "word": "saffron",
+    "sentence": "Someone had left saffron next to the stove.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 2.928571429,
+      "Haptic": 1.285714286,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.428571429,
+      "Visual": 3.357142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "saffron",
+    "sentence": "The taste of the saffron lingered delightfully on their tongue.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 2.928571429,
+      "Haptic": 1.285714286,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.428571429,
+      "Visual": 3.357142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "saffron",
+    "sentence": "The saffron was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 2.928571429,
+      "Haptic": 1.285714286,
+      "Interoceptive": 0.357142857,
+      "Olfactory": 3.428571429,
+      "Visual": 3.357142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cardamom",
+    "sentence": "The cardamom had been sitting on the table all morning.",
+    "condition": "implicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "cardamom",
+    "sentence": "The flavor of the cardamom was complex and unforgettable.",
+    "condition": "explicit",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "cardamom",
+    "sentence": "They discussed the cardamom at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Gustatory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "sandpaper",
+    "sentence": "The sandpaper sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.833333333,
+      "Gustatory": 0.222222222,
+      "Haptic": 4.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.277777778,
+      "Visual": 4.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sandpaper",
+    "sentence": "The sandpaper felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.833333333,
+      "Gustatory": 0.222222222,
+      "Haptic": 4.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.277777778,
+      "Visual": 4.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sandpaper",
+    "sentence": "The sandpaper was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.833333333,
+      "Gustatory": 0.222222222,
+      "Haptic": 4.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.277777778,
+      "Visual": 4.055555556
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silk",
+    "sentence": "There was silk scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.9375,
+      "Interoceptive": 0.8125,
+      "Olfactory": 0.5,
+      "Visual": 3.875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silk",
+    "sentence": "Touching the silk produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.9375,
+      "Interoceptive": 0.8125,
+      "Olfactory": 0.5,
+      "Visual": 3.875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silk",
+    "sentence": "They discussed the silk at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.9375,
+      "Interoceptive": 0.8125,
+      "Olfactory": 0.5,
+      "Visual": 3.875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "velvet",
+    "sentence": "The velvet lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.647058824,
+      "Gustatory": 0.764705882,
+      "Haptic": 3.764705882,
+      "Interoceptive": 0.647058824,
+      "Olfactory": 0.470588235,
+      "Visual": 3.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "velvet",
+    "sentence": "The texture of the velvet was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.647058824,
+      "Gustatory": 0.764705882,
+      "Haptic": 3.764705882,
+      "Interoceptive": 0.647058824,
+      "Olfactory": 0.470588235,
+      "Visual": 3.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "velvet",
+    "sentence": "The velvet was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.647058824,
+      "Gustatory": 0.764705882,
+      "Haptic": 3.764705882,
+      "Interoceptive": 0.647058824,
+      "Olfactory": 0.470588235,
+      "Visual": 3.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gravel",
+    "sentence": "The gravel lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 2.736842105,
+      "Gustatory": 0.157894737,
+      "Haptic": 3.263157895,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.315789474,
+      "Visual": 4.263157895
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gravel",
+    "sentence": "The texture of the gravel was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 2.736842105,
+      "Gustatory": 0.157894737,
+      "Haptic": 3.263157895,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.315789474,
+      "Visual": 4.263157895
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gravel",
+    "sentence": "The gravel was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 2.736842105,
+      "Gustatory": 0.157894737,
+      "Haptic": 3.263157895,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.315789474,
+      "Visual": 4.263157895
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ice",
+    "sentence": "There was ice scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.375,
+      "Gustatory": 2.625,
+      "Haptic": 3.75,
+      "Interoceptive": 1.3125,
+      "Olfactory": 0.125,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ice",
+    "sentence": "Touching the ice produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.375,
+      "Gustatory": 2.625,
+      "Haptic": 3.75,
+      "Interoceptive": 1.3125,
+      "Olfactory": 0.125,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ice",
+    "sentence": "They discussed the ice at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.375,
+      "Gustatory": 2.625,
+      "Haptic": 3.75,
+      "Interoceptive": 1.3125,
+      "Olfactory": 0.125,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wool",
+    "sentence": "There was wool scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 0.085714286,
+      "Haptic": 4.085714286,
+      "Interoceptive": 0.171428571,
+      "Olfactory": 0.6,
+      "Visual": 3.742857143
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wool",
+    "sentence": "Touching the wool produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 0.085714286,
+      "Haptic": 4.085714286,
+      "Interoceptive": 0.171428571,
+      "Olfactory": 0.6,
+      "Visual": 3.742857143
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wool",
+    "sentence": "They discussed the wool at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 0.085714286,
+      "Haptic": 4.085714286,
+      "Interoceptive": 0.171428571,
+      "Olfactory": 0.6,
+      "Visual": 3.742857143
+    },
+    "in_norms": true
+  },
+  {
+    "word": "feather",
+    "sentence": "There was feather scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.090909091,
+      "Gustatory": 0.03030303,
+      "Haptic": 3.515151515,
+      "Interoceptive": 0.303030303,
+      "Olfactory": 0.212121212,
+      "Visual": 4.03030303
+    },
+    "in_norms": true
+  },
+  {
+    "word": "feather",
+    "sentence": "Touching the feather produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.090909091,
+      "Gustatory": 0.03030303,
+      "Haptic": 3.515151515,
+      "Interoceptive": 0.303030303,
+      "Olfactory": 0.212121212,
+      "Visual": 4.03030303
+    },
+    "in_norms": true
+  },
+  {
+    "word": "feather",
+    "sentence": "They discussed the feather at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.090909091,
+      "Gustatory": 0.03030303,
+      "Haptic": 3.515151515,
+      "Interoceptive": 0.303030303,
+      "Olfactory": 0.212121212,
+      "Visual": 4.03030303
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thorn",
+    "sentence": "The thorn lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 0.0,
+      "Haptic": 3.45,
+      "Interoceptive": 0.65,
+      "Olfactory": 0.0,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thorn",
+    "sentence": "The texture of the thorn was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 0.0,
+      "Haptic": 3.45,
+      "Interoceptive": 0.65,
+      "Olfactory": 0.0,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thorn",
+    "sentence": "The thorn was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.15,
+      "Gustatory": 0.0,
+      "Haptic": 3.45,
+      "Interoceptive": 0.65,
+      "Olfactory": 0.0,
+      "Visual": 3.85
+    },
+    "in_norms": true
+  },
+  {
+    "word": "needle",
+    "sentence": "There was needle scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.625,
+      "Interoceptive": 1.4375,
+      "Olfactory": 0.1875,
+      "Visual": 3.6875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "needle",
+    "sentence": "Touching the needle produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.625,
+      "Interoceptive": 1.4375,
+      "Olfactory": 0.1875,
+      "Visual": 3.6875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "needle",
+    "sentence": "They discussed the needle at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.3125,
+      "Haptic": 3.625,
+      "Interoceptive": 1.4375,
+      "Olfactory": 0.1875,
+      "Visual": 3.6875
+    },
+    "in_norms": true
+  },
+  {
+    "word": "blade",
+    "sentence": "The blade sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.0,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.0,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "blade",
+    "sentence": "The blade felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.0,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.0,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "blade",
+    "sentence": "The blade was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.0,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.210526316,
+      "Olfactory": 0.0,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sponge",
+    "sentence": "The sponge lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.047619048,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.571428571,
+      "Interoceptive": 0.80952381,
+      "Olfactory": 1.142857143,
+      "Visual": 3.476190476
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sponge",
+    "sentence": "The texture of the sponge was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.047619048,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.571428571,
+      "Interoceptive": 0.80952381,
+      "Olfactory": 1.142857143,
+      "Visual": 3.476190476
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sponge",
+    "sentence": "The sponge was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.047619048,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.571428571,
+      "Interoceptive": 0.80952381,
+      "Olfactory": 1.142857143,
+      "Visual": 3.476190476
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cotton",
+    "sentence": "There was cotton scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 0.3,
+      "Haptic": 3.8,
+      "Interoceptive": 0.25,
+      "Olfactory": 0.8,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cotton",
+    "sentence": "Touching the cotton produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 0.3,
+      "Haptic": 3.8,
+      "Interoceptive": 0.25,
+      "Olfactory": 0.8,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cotton",
+    "sentence": "They discussed the cotton at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 0.3,
+      "Haptic": 3.8,
+      "Interoceptive": 0.25,
+      "Olfactory": 0.8,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rope",
+    "sentence": "The rope sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.45,
+      "Gustatory": 0.2,
+      "Haptic": 3.4,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.4,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rope",
+    "sentence": "The rope felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.45,
+      "Gustatory": 0.2,
+      "Haptic": 3.4,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.4,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rope",
+    "sentence": "The rope was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.45,
+      "Gustatory": 0.2,
+      "Haptic": 3.4,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.4,
+      "Visual": 4.1
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chain",
+    "sentence": "There was chain scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.9,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chain",
+    "sentence": "Touching the chain produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.9,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chain",
+    "sentence": "They discussed the chain at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.9,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "brick",
+    "sentence": "There was brick scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.363636364,
+      "Gustatory": 0.0,
+      "Haptic": 3.242424242,
+      "Interoceptive": 0.121212121,
+      "Olfactory": 0.181818182,
+      "Visual": 4.090909091
+    },
+    "in_norms": true
+  },
+  {
+    "word": "brick",
+    "sentence": "Touching the brick produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.363636364,
+      "Gustatory": 0.0,
+      "Haptic": 3.242424242,
+      "Interoceptive": 0.121212121,
+      "Olfactory": 0.181818182,
+      "Visual": 4.090909091
+    },
+    "in_norms": true
+  },
+  {
+    "word": "brick",
+    "sentence": "They discussed the brick at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.363636364,
+      "Gustatory": 0.0,
+      "Haptic": 3.242424242,
+      "Interoceptive": 0.121212121,
+      "Olfactory": 0.181818182,
+      "Visual": 4.090909091
+    },
+    "in_norms": true
+  },
+  {
+    "word": "marble",
+    "sentence": "The marble sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.9,
+      "Gustatory": 0.05,
+      "Haptic": 3.25,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.05,
+      "Visual": 4.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "marble",
+    "sentence": "The marble felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.9,
+      "Gustatory": 0.05,
+      "Haptic": 3.25,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.05,
+      "Visual": 4.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "marble",
+    "sentence": "The marble was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.9,
+      "Gustatory": 0.05,
+      "Haptic": 3.25,
+      "Interoceptive": 0.2,
+      "Olfactory": 0.05,
+      "Visual": 4.55
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clay",
+    "sentence": "The clay sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.125,
+      "Haptic": 3.0,
+      "Interoceptive": 0.3125,
+      "Olfactory": 1.0,
+      "Visual": 3.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clay",
+    "sentence": "The clay felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.125,
+      "Haptic": 3.0,
+      "Interoceptive": 0.3125,
+      "Olfactory": 1.0,
+      "Visual": 3.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "clay",
+    "sentence": "The clay was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3125,
+      "Gustatory": 0.125,
+      "Haptic": 3.0,
+      "Interoceptive": 0.3125,
+      "Olfactory": 1.0,
+      "Visual": 3.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mud",
+    "sentence": "The mud sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.736842105,
+      "Gustatory": 0.105263158,
+      "Haptic": 3.052631579,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.842105263,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mud",
+    "sentence": "The mud felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.736842105,
+      "Gustatory": 0.105263158,
+      "Haptic": 3.052631579,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.842105263,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mud",
+    "sentence": "The mud was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.736842105,
+      "Gustatory": 0.105263158,
+      "Haptic": 3.052631579,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.842105263,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "foam",
+    "sentence": "There was foam scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.631578947,
+      "Gustatory": 0.631578947,
+      "Haptic": 2.315789474,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.421052632,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "foam",
+    "sentence": "Touching the foam produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.631578947,
+      "Gustatory": 0.631578947,
+      "Haptic": 2.315789474,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.421052632,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "foam",
+    "sentence": "They discussed the foam at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.631578947,
+      "Gustatory": 0.631578947,
+      "Haptic": 2.315789474,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.421052632,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "steel",
+    "sentence": "The steel sat on the shelf beside the door.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.947368421,
+      "Gustatory": 0.052631579,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.368421053,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "steel",
+    "sentence": "The steel felt rough and uneven against their fingers.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.947368421,
+      "Gustatory": 0.052631579,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.368421053,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "steel",
+    "sentence": "The steel was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.947368421,
+      "Gustatory": 0.052631579,
+      "Haptic": 3.105263158,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.368421053,
+      "Visual": 3.842105263
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glass",
+    "sentence": "There was glass scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.210526316,
+      "Gustatory": 0.210526316,
+      "Haptic": 3.368421053,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.184210526,
+      "Visual": 4.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glass",
+    "sentence": "Touching the glass produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.210526316,
+      "Gustatory": 0.210526316,
+      "Haptic": 3.368421053,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.184210526,
+      "Visual": 4.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glass",
+    "sentence": "They discussed the glass at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.210526316,
+      "Gustatory": 0.210526316,
+      "Haptic": 3.368421053,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.184210526,
+      "Visual": 4.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "leather",
+    "sentence": "The leather lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.75,
+      "Gustatory": 0.1,
+      "Haptic": 4.0,
+      "Interoceptive": 0.15,
+      "Olfactory": 3.2,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "leather",
+    "sentence": "The texture of the leather was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.75,
+      "Gustatory": 0.1,
+      "Haptic": 4.0,
+      "Interoceptive": 0.15,
+      "Olfactory": 3.2,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "leather",
+    "sentence": "The leather was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.75,
+      "Gustatory": 0.1,
+      "Haptic": 4.0,
+      "Interoceptive": 0.15,
+      "Olfactory": 3.2,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rubber",
+    "sentence": "There was rubber scattered across the workbench.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.368421053,
+      "Haptic": 4.052631579,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 2.684210526,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rubber",
+    "sentence": "Touching the rubber produced a surprising sensation.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.368421053,
+      "Haptic": 4.052631579,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 2.684210526,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rubber",
+    "sentence": "They discussed the rubber at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.578947368,
+      "Gustatory": 0.368421053,
+      "Haptic": 4.052631579,
+      "Interoceptive": 0.157894737,
+      "Olfactory": 2.684210526,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wax",
+    "sentence": "The wax lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 1.2,
+      "Haptic": 3.25,
+      "Interoceptive": 0.5,
+      "Olfactory": 2.4,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wax",
+    "sentence": "The texture of the wax was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 1.2,
+      "Haptic": 3.25,
+      "Interoceptive": 0.5,
+      "Olfactory": 2.4,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "wax",
+    "sentence": "The wax was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 1.2,
+      "Haptic": 3.25,
+      "Interoceptive": 0.5,
+      "Olfactory": 2.4,
+      "Visual": 3.6
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cork",
+    "sentence": "The cork lay in a pile on the floor.",
+    "condition": "implicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.117647059,
+      "Gustatory": 0.176470588,
+      "Haptic": 3.235294118,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.529411765,
+      "Visual": 3.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cork",
+    "sentence": "The texture of the cork was unlike anything they had felt.",
+    "condition": "explicit",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.117647059,
+      "Gustatory": 0.176470588,
+      "Haptic": 3.235294118,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.529411765,
+      "Visual": 3.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cork",
+    "sentence": "The cork was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Haptic",
+    "sense_scores": {
+      "Auditory": 1.117647059,
+      "Gustatory": 0.176470588,
+      "Haptic": 3.235294118,
+      "Interoceptive": 0.058823529,
+      "Olfactory": 0.529411765,
+      "Visual": 3.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "headache",
+    "sentence": "They couldn't shake the headache all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.4,
+      "Gustatory": 0.0,
+      "Haptic": 0.65,
+      "Interoceptive": 4.9,
+      "Olfactory": 0.0,
+      "Visual": 0.4
+    },
+    "in_norms": true
+  },
+  {
+    "word": "headache",
+    "sentence": "The sensation of headache spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.4,
+      "Gustatory": 0.0,
+      "Haptic": 0.65,
+      "Interoceptive": 4.9,
+      "Olfactory": 0.0,
+      "Visual": 0.4
+    },
+    "in_norms": true
+  },
+  {
+    "word": "headache",
+    "sentence": "The headache was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.4,
+      "Gustatory": 0.0,
+      "Haptic": 0.65,
+      "Interoceptive": 4.9,
+      "Olfactory": 0.0,
+      "Visual": 0.4
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nausea",
+    "sentence": "They couldn't shake the nausea all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.6,
+      "Gustatory": 0.95,
+      "Haptic": 0.1,
+      "Interoceptive": 4.85,
+      "Olfactory": 0.95,
+      "Visual": 1.15
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nausea",
+    "sentence": "The sensation of nausea spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.6,
+      "Gustatory": 0.95,
+      "Haptic": 0.1,
+      "Interoceptive": 4.85,
+      "Olfactory": 0.95,
+      "Visual": 1.15
+    },
+    "in_norms": true
+  },
+  {
+    "word": "nausea",
+    "sentence": "The nausea was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.6,
+      "Gustatory": 0.95,
+      "Haptic": 0.1,
+      "Interoceptive": 4.85,
+      "Olfactory": 0.95,
+      "Visual": 1.15
+    },
+    "in_norms": true
+  },
+  {
+    "word": "dizziness",
+    "sentence": "They couldn't shake the dizziness all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.0,
+      "Haptic": 0.235294118,
+      "Interoceptive": 4.529411765,
+      "Olfactory": 0.0,
+      "Visual": 1.764705882
+    },
+    "in_norms": true
+  },
+  {
+    "word": "dizziness",
+    "sentence": "The sensation of dizziness spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.0,
+      "Haptic": 0.235294118,
+      "Interoceptive": 4.529411765,
+      "Olfactory": 0.0,
+      "Visual": 1.764705882
+    },
+    "in_norms": true
+  },
+  {
+    "word": "dizziness",
+    "sentence": "The dizziness was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.0,
+      "Haptic": 0.235294118,
+      "Interoceptive": 4.529411765,
+      "Olfactory": 0.0,
+      "Visual": 1.764705882
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hunger",
+    "sentence": "A wave of hunger came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.176470588,
+      "Gustatory": 1.647058824,
+      "Haptic": 0.705882353,
+      "Interoceptive": 4.470588235,
+      "Olfactory": 1.117647059,
+      "Visual": 1.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hunger",
+    "sentence": "The hunger made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.176470588,
+      "Gustatory": 1.647058824,
+      "Haptic": 0.705882353,
+      "Interoceptive": 4.470588235,
+      "Olfactory": 1.117647059,
+      "Visual": 1.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "hunger",
+    "sentence": "The hunger was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.176470588,
+      "Gustatory": 1.647058824,
+      "Haptic": 0.705882353,
+      "Interoceptive": 4.470588235,
+      "Olfactory": 1.117647059,
+      "Visual": 1.588235294
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thirst",
+    "sentence": "The thirst grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 1.055555556,
+      "Haptic": 0.944444444,
+      "Interoceptive": 4.5,
+      "Olfactory": 0.277777778,
+      "Visual": 0.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thirst",
+    "sentence": "They could feel the thirst deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 1.055555556,
+      "Haptic": 0.944444444,
+      "Interoceptive": 4.5,
+      "Olfactory": 0.277777778,
+      "Visual": 0.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "thirst",
+    "sentence": "They discussed the thirst at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 1.055555556,
+      "Haptic": 0.944444444,
+      "Interoceptive": 4.5,
+      "Olfactory": 0.277777778,
+      "Visual": 0.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fatigue",
+    "sentence": "They couldn't shake the fatigue all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.888888889,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.444444444,
+      "Interoceptive": 4.722222222,
+      "Olfactory": 0.055555556,
+      "Visual": 2.166666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fatigue",
+    "sentence": "The sensation of fatigue spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.888888889,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.444444444,
+      "Interoceptive": 4.722222222,
+      "Olfactory": 0.055555556,
+      "Visual": 2.166666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fatigue",
+    "sentence": "The fatigue was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.888888889,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.444444444,
+      "Interoceptive": 4.722222222,
+      "Olfactory": 0.055555556,
+      "Visual": 2.166666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "heartbeat",
+    "sentence": "The heartbeat grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 3.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.5,
+      "Interoceptive": 4.25,
+      "Olfactory": 0.0,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "heartbeat",
+    "sentence": "They could feel the heartbeat deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 3.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.5,
+      "Interoceptive": 4.25,
+      "Olfactory": 0.0,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "heartbeat",
+    "sentence": "They discussed the heartbeat at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 3.625,
+      "Gustatory": 0.0,
+      "Haptic": 2.5,
+      "Interoceptive": 4.25,
+      "Olfactory": 0.0,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cramp",
+    "sentence": "A wave of cramp came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.409090909,
+      "Gustatory": 0.181818182,
+      "Haptic": 1.954545455,
+      "Interoceptive": 3.909090909,
+      "Olfactory": 0.136363636,
+      "Visual": 1.409090909
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cramp",
+    "sentence": "The cramp made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.409090909,
+      "Gustatory": 0.181818182,
+      "Haptic": 1.954545455,
+      "Interoceptive": 3.909090909,
+      "Olfactory": 0.136363636,
+      "Visual": 1.409090909
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cramp",
+    "sentence": "The cramp was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.409090909,
+      "Gustatory": 0.181818182,
+      "Haptic": 1.954545455,
+      "Interoceptive": 3.909090909,
+      "Olfactory": 0.136363636,
+      "Visual": 1.409090909
+    },
+    "in_norms": true
+  },
+  {
+    "word": "itch",
+    "sentence": "A wave of itch came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.285714286,
+      "Gustatory": 0.0,
+      "Haptic": 3.619047619,
+      "Interoceptive": 4.238095238,
+      "Olfactory": 0.047619048,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "itch",
+    "sentence": "The itch made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.285714286,
+      "Gustatory": 0.0,
+      "Haptic": 3.619047619,
+      "Interoceptive": 4.238095238,
+      "Olfactory": 0.047619048,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "itch",
+    "sentence": "The itch was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.285714286,
+      "Gustatory": 0.0,
+      "Haptic": 3.619047619,
+      "Interoceptive": 4.238095238,
+      "Olfactory": 0.047619048,
+      "Visual": 1.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fever",
+    "sentence": "A wave of fever came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.722222222,
+      "Gustatory": 0.111111111,
+      "Haptic": 3.444444444,
+      "Interoceptive": 4.666666667,
+      "Olfactory": 0.166666667,
+      "Visual": 1.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fever",
+    "sentence": "The fever made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.722222222,
+      "Gustatory": 0.111111111,
+      "Haptic": 3.444444444,
+      "Interoceptive": 4.666666667,
+      "Olfactory": 0.166666667,
+      "Visual": 1.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fever",
+    "sentence": "The fever was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.722222222,
+      "Gustatory": 0.111111111,
+      "Haptic": 3.444444444,
+      "Interoceptive": 4.666666667,
+      "Olfactory": 0.166666667,
+      "Visual": 1.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chill",
+    "sentence": "A wave of chill came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.714285714,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.0,
+      "Interoceptive": 3.666666667,
+      "Olfactory": 0.047619048,
+      "Visual": 0.761904762
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chill",
+    "sentence": "The chill made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.714285714,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.0,
+      "Interoceptive": 3.666666667,
+      "Olfactory": 0.047619048,
+      "Visual": 0.761904762
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chill",
+    "sentence": "The chill was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.714285714,
+      "Gustatory": 0.523809524,
+      "Haptic": 3.0,
+      "Interoceptive": 3.666666667,
+      "Olfactory": 0.047619048,
+      "Visual": 0.761904762
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pain",
+    "sentence": "They couldn't shake the pain all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.590909091,
+      "Gustatory": 0.227272727,
+      "Haptic": 2.863636364,
+      "Interoceptive": 4.272727273,
+      "Olfactory": 0.181818182,
+      "Visual": 2.045454545
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pain",
+    "sentence": "The sensation of pain spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.590909091,
+      "Gustatory": 0.227272727,
+      "Haptic": 2.863636364,
+      "Interoceptive": 4.272727273,
+      "Olfactory": 0.181818182,
+      "Visual": 2.045454545
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pain",
+    "sentence": "The pain was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.590909091,
+      "Gustatory": 0.227272727,
+      "Haptic": 2.863636364,
+      "Interoceptive": 4.272727273,
+      "Olfactory": 0.181818182,
+      "Visual": 2.045454545
+    },
+    "in_norms": true
+  },
+  {
+    "word": "anxiety",
+    "sentence": "The anxiety grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.263157895,
+      "Haptic": 0.473684211,
+      "Interoceptive": 4.473684211,
+      "Olfactory": 0.263157895,
+      "Visual": 1.894736842
+    },
+    "in_norms": true
+  },
+  {
+    "word": "anxiety",
+    "sentence": "They could feel the anxiety deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.263157895,
+      "Haptic": 0.473684211,
+      "Interoceptive": 4.473684211,
+      "Olfactory": 0.263157895,
+      "Visual": 1.894736842
+    },
+    "in_norms": true
+  },
+  {
+    "word": "anxiety",
+    "sentence": "They discussed the anxiety at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.263157895,
+      "Haptic": 0.473684211,
+      "Interoceptive": 4.473684211,
+      "Olfactory": 0.263157895,
+      "Visual": 1.894736842
+    },
+    "in_norms": true
+  },
+  {
+    "word": "exhaustion",
+    "sentence": "They couldn't shake the exhaustion all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.933333333,
+      "Gustatory": 0.0,
+      "Haptic": 0.266666667,
+      "Interoceptive": 4.066666667,
+      "Olfactory": 0.0,
+      "Visual": 2.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "exhaustion",
+    "sentence": "The sensation of exhaustion spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.933333333,
+      "Gustatory": 0.0,
+      "Haptic": 0.266666667,
+      "Interoceptive": 4.066666667,
+      "Olfactory": 0.0,
+      "Visual": 2.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "exhaustion",
+    "sentence": "The exhaustion was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.933333333,
+      "Gustatory": 0.0,
+      "Haptic": 0.266666667,
+      "Interoceptive": 4.066666667,
+      "Olfactory": 0.0,
+      "Visual": 2.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drowsiness",
+    "sentence": "The drowsiness grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.277777778,
+      "Interoceptive": 4.0,
+      "Olfactory": 0.166666667,
+      "Visual": 1.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drowsiness",
+    "sentence": "They could feel the drowsiness deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.277777778,
+      "Interoceptive": 4.0,
+      "Olfactory": 0.166666667,
+      "Visual": 1.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "drowsiness",
+    "sentence": "They discussed the drowsiness at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.277777778,
+      "Interoceptive": 4.0,
+      "Olfactory": 0.166666667,
+      "Visual": 1.666666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "soreness",
+    "sentence": "The soreness grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 4.333333333,
+      "Olfactory": 0.0,
+      "Visual": 0.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "soreness",
+    "sentence": "They could feel the soreness deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 4.333333333,
+      "Olfactory": 0.0,
+      "Visual": 0.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "soreness",
+    "sentence": "They discussed the soreness at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 3.0,
+      "Interoceptive": 4.333333333,
+      "Olfactory": 0.0,
+      "Visual": 0.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "numbness",
+    "sentence": "They couldn't shake the numbness all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.0,
+      "Haptic": 1.888888889,
+      "Interoceptive": 4.111111111,
+      "Olfactory": 0.0,
+      "Visual": 0.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "numbness",
+    "sentence": "The sensation of numbness spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.0,
+      "Haptic": 1.888888889,
+      "Interoceptive": 4.111111111,
+      "Olfactory": 0.0,
+      "Visual": 0.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "numbness",
+    "sentence": "The numbness was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.0,
+      "Haptic": 1.888888889,
+      "Interoceptive": 4.111111111,
+      "Olfactory": 0.0,
+      "Visual": 0.611111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tension",
+    "sentence": "A wave of tension came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.095238095,
+      "Gustatory": 0.095238095,
+      "Haptic": 1.333333333,
+      "Interoceptive": 3.619047619,
+      "Olfactory": 0.047619048,
+      "Visual": 1.857142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tension",
+    "sentence": "The tension made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.095238095,
+      "Gustatory": 0.095238095,
+      "Haptic": 1.333333333,
+      "Interoceptive": 3.619047619,
+      "Olfactory": 0.047619048,
+      "Visual": 1.857142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tension",
+    "sentence": "The tension was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.095238095,
+      "Gustatory": 0.095238095,
+      "Haptic": 1.333333333,
+      "Interoceptive": 3.619047619,
+      "Olfactory": 0.047619048,
+      "Visual": 1.857142857
+    },
+    "in_norms": true
+  },
+  {
+    "word": "shivers",
+    "sentence": "A wave of shivers came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "shivers",
+    "sentence": "The shivers made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "shivers",
+    "sentence": "The shivers was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "palpitation",
+    "sentence": "A wave of palpitation came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.052631579,
+      "Interoceptive": 2.947368421,
+      "Olfactory": 0.0,
+      "Visual": 0.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "palpitation",
+    "sentence": "The palpitation made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.052631579,
+      "Interoceptive": 2.947368421,
+      "Olfactory": 0.0,
+      "Visual": 0.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "palpitation",
+    "sentence": "The palpitation was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.052631579,
+      "Interoceptive": 2.947368421,
+      "Olfactory": 0.0,
+      "Visual": 0.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ache",
+    "sentence": "They couldn't shake the ache all afternoon.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0625,
+      "Haptic": 1.1875,
+      "Interoceptive": 4.375,
+      "Olfactory": 0.0625,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ache",
+    "sentence": "The sensation of ache spread through their body.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0625,
+      "Haptic": 1.1875,
+      "Interoceptive": 4.375,
+      "Olfactory": 0.0625,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ache",
+    "sentence": "The ache was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.0625,
+      "Haptic": 1.1875,
+      "Interoceptive": 4.375,
+      "Olfactory": 0.0625,
+      "Visual": 1.0625
+    },
+    "in_norms": true
+  },
+  {
+    "word": "breathlessness",
+    "sentence": "A wave of breathlessness came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.4375,
+      "Gustatory": 0.0,
+      "Haptic": 0.1875,
+      "Interoceptive": 3.875,
+      "Olfactory": 0.0,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "breathlessness",
+    "sentence": "The breathlessness made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.4375,
+      "Gustatory": 0.0,
+      "Haptic": 0.1875,
+      "Interoceptive": 3.875,
+      "Olfactory": 0.0,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "breathlessness",
+    "sentence": "The breathlessness was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.4375,
+      "Gustatory": 0.0,
+      "Haptic": 0.1875,
+      "Interoceptive": 3.875,
+      "Olfactory": 0.0,
+      "Visual": 1.4375
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vertigo",
+    "sentence": "A wave of vertigo came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.571428571,
+      "Gustatory": 0.285714286,
+      "Haptic": 0.4,
+      "Interoceptive": 3.628571429,
+      "Olfactory": 0.4,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vertigo",
+    "sentence": "The vertigo made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.571428571,
+      "Gustatory": 0.285714286,
+      "Haptic": 0.4,
+      "Interoceptive": 3.628571429,
+      "Olfactory": 0.4,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "vertigo",
+    "sentence": "The vertigo was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.571428571,
+      "Gustatory": 0.285714286,
+      "Haptic": 0.4,
+      "Interoceptive": 3.628571429,
+      "Olfactory": 0.4,
+      "Visual": 1.714285714
+    },
+    "in_norms": true
+  },
+  {
+    "word": "faintness",
+    "sentence": "A wave of faintness came over them suddenly.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.275,
+      "Haptic": 0.3,
+      "Interoceptive": 2.725,
+      "Olfactory": 0.35,
+      "Visual": 2.125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "faintness",
+    "sentence": "The faintness made their whole body feel strange.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.275,
+      "Haptic": 0.3,
+      "Interoceptive": 2.725,
+      "Olfactory": 0.35,
+      "Visual": 2.125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "faintness",
+    "sentence": "The faintness was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.275,
+      "Haptic": 0.3,
+      "Interoceptive": 2.725,
+      "Olfactory": 0.35,
+      "Visual": 2.125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tingling",
+    "sentence": "The tingling grew stronger as the hours passed.",
+    "condition": "implicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.210526316,
+      "Gustatory": 0.263157895,
+      "Haptic": 1.842105263,
+      "Interoceptive": 4.052631579,
+      "Olfactory": 0.0,
+      "Visual": 0.157894737
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tingling",
+    "sentence": "They could feel the tingling deep in their core.",
+    "condition": "explicit",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.210526316,
+      "Gustatory": 0.263157895,
+      "Haptic": 1.842105263,
+      "Interoceptive": 4.052631579,
+      "Olfactory": 0.0,
+      "Visual": 0.157894737
+    },
+    "in_norms": true
+  },
+  {
+    "word": "tingling",
+    "sentence": "They discussed the tingling at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Interoceptive",
+    "sense_scores": {
+      "Auditory": 0.210526316,
+      "Gustatory": 0.263157895,
+      "Haptic": 1.842105263,
+      "Interoceptive": 4.052631579,
+      "Olfactory": 0.0,
+      "Visual": 0.157894737
+    },
+    "in_norms": true
+  },
+  {
+    "word": "perfume",
+    "sentence": "The perfume drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.5,
+      "Haptic": 0.611111111,
+      "Interoceptive": 0.777777778,
+      "Olfactory": 5.0,
+      "Visual": 1.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "perfume",
+    "sentence": "The perfume smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.5,
+      "Haptic": 0.611111111,
+      "Interoceptive": 0.777777778,
+      "Olfactory": 5.0,
+      "Visual": 1.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "perfume",
+    "sentence": "The perfume was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.5,
+      "Haptic": 0.611111111,
+      "Interoceptive": 0.777777778,
+      "Olfactory": 5.0,
+      "Visual": 1.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "smoke",
+    "sentence": "The smoke lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 1.476190476,
+      "Haptic": 0.142857143,
+      "Interoceptive": 0.952380952,
+      "Olfactory": 4.380952381,
+      "Visual": 4.285714286
+    },
+    "in_norms": true
+  },
+  {
+    "word": "smoke",
+    "sentence": "You could smell the smoke from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 1.476190476,
+      "Haptic": 0.142857143,
+      "Interoceptive": 0.952380952,
+      "Olfactory": 4.380952381,
+      "Visual": 4.285714286
+    },
+    "in_norms": true
+  },
+  {
+    "word": "smoke",
+    "sentence": "The smoke was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.142857143,
+      "Gustatory": 1.476190476,
+      "Haptic": 0.142857143,
+      "Interoceptive": 0.952380952,
+      "Olfactory": 4.380952381,
+      "Visual": 4.285714286
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garbage",
+    "sentence": "The garbage lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.473684211,
+      "Gustatory": 0.789473684,
+      "Haptic": 2.368421053,
+      "Interoceptive": 0.684210526,
+      "Olfactory": 4.263157895,
+      "Visual": 4.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garbage",
+    "sentence": "You could smell the garbage from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.473684211,
+      "Gustatory": 0.789473684,
+      "Haptic": 2.368421053,
+      "Interoceptive": 0.684210526,
+      "Olfactory": 4.263157895,
+      "Visual": 4.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "garbage",
+    "sentence": "The garbage was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.473684211,
+      "Gustatory": 0.789473684,
+      "Haptic": 2.368421053,
+      "Interoceptive": 0.684210526,
+      "Olfactory": 4.263157895,
+      "Visual": 4.578947368
+    },
+    "in_norms": true
+  },
+  {
+    "word": "roses",
+    "sentence": "The roses lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "roses",
+    "sentence": "You could smell the roses from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "roses",
+    "sentence": "The roses was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 0.0
+    },
+    "in_norms": false
+  },
+  {
+    "word": "incense",
+    "sentence": "The incense drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 0.294117647,
+      "Haptic": 1.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 5.0,
+      "Visual": 2.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "incense",
+    "sentence": "The incense smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 0.294117647,
+      "Haptic": 1.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 5.0,
+      "Visual": 2.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "incense",
+    "sentence": "The incense was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.176470588,
+      "Gustatory": 0.294117647,
+      "Haptic": 1.411764706,
+      "Interoceptive": 0.294117647,
+      "Olfactory": 5.0,
+      "Visual": 2.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "coffee",
+    "sentence": "The coffee lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 4.611111111,
+      "Haptic": 1.722222222,
+      "Interoceptive": 1.555555556,
+      "Olfactory": 4.277777778,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "coffee",
+    "sentence": "You could smell the coffee from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 4.611111111,
+      "Haptic": 1.722222222,
+      "Interoceptive": 1.555555556,
+      "Olfactory": 4.277777778,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "coffee",
+    "sentence": "The coffee was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 4.611111111,
+      "Haptic": 1.722222222,
+      "Interoceptive": 1.555555556,
+      "Olfactory": 4.277777778,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "skunk",
+    "sentence": "The skunk drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.176470588,
+      "Olfactory": 4.117647059,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "skunk",
+    "sentence": "The skunk smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.176470588,
+      "Olfactory": 4.117647059,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "skunk",
+    "sentence": "The skunk was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.0,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.176470588,
+      "Olfactory": 4.117647059,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lavender",
+    "sentence": "There was lavender everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.105263158,
+      "Gustatory": 1.052631579,
+      "Haptic": 1.526315789,
+      "Interoceptive": 0.421052632,
+      "Olfactory": 4.315789474,
+      "Visual": 3.947368421
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lavender",
+    "sentence": "The scent of the lavender was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.105263158,
+      "Gustatory": 1.052631579,
+      "Haptic": 1.526315789,
+      "Interoceptive": 0.421052632,
+      "Olfactory": 4.315789474,
+      "Visual": 3.947368421
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lavender",
+    "sentence": "They discussed the lavender at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.105263158,
+      "Gustatory": 1.052631579,
+      "Haptic": 1.526315789,
+      "Interoceptive": 0.421052632,
+      "Olfactory": 4.315789474,
+      "Visual": 3.947368421
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gasoline",
+    "sentence": "The gasoline lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.55,
+      "Gustatory": 0.35,
+      "Haptic": 1.05,
+      "Interoceptive": 0.0,
+      "Olfactory": 4.15,
+      "Visual": 3.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gasoline",
+    "sentence": "You could smell the gasoline from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.55,
+      "Gustatory": 0.35,
+      "Haptic": 1.05,
+      "Interoceptive": 0.0,
+      "Olfactory": 4.15,
+      "Visual": 3.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "gasoline",
+    "sentence": "The gasoline was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.55,
+      "Gustatory": 0.35,
+      "Haptic": 1.05,
+      "Interoceptive": 0.0,
+      "Olfactory": 4.15,
+      "Visual": 3.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cedar",
+    "sentence": "There was cedar everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 0.0,
+      "Haptic": 2.2,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.466666667,
+      "Visual": 3.466666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cedar",
+    "sentence": "The scent of the cedar was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 0.0,
+      "Haptic": 2.2,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.466666667,
+      "Visual": 3.466666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cedar",
+    "sentence": "They discussed the cedar at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 0.0,
+      "Haptic": 2.2,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.466666667,
+      "Visual": 3.466666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bacon",
+    "sentence": "The bacon lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.7,
+      "Interoceptive": 0.65,
+      "Olfactory": 4.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bacon",
+    "sentence": "You could smell the bacon from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.7,
+      "Interoceptive": 0.65,
+      "Olfactory": 4.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "bacon",
+    "sentence": "The bacon was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 1.2,
+      "Gustatory": 4.45,
+      "Haptic": 2.7,
+      "Interoceptive": 0.65,
+      "Olfactory": 4.25,
+      "Visual": 3.9
+    },
+    "in_norms": true
+  },
+  {
+    "word": "jasmine",
+    "sentence": "The jasmine drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 1.722222222,
+      "Haptic": 1.5,
+      "Interoceptive": 0.333333333,
+      "Olfactory": 3.388888889,
+      "Visual": 3.222222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "jasmine",
+    "sentence": "The jasmine smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 1.722222222,
+      "Haptic": 1.5,
+      "Interoceptive": 0.333333333,
+      "Olfactory": 3.388888889,
+      "Visual": 3.222222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "jasmine",
+    "sentence": "The jasmine was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 1.722222222,
+      "Haptic": 1.5,
+      "Interoceptive": 0.333333333,
+      "Olfactory": 3.388888889,
+      "Visual": 3.222222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ammonia",
+    "sentence": "There was ammonia everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 0.45,
+      "Haptic": 0.6,
+      "Interoceptive": 0.5,
+      "Olfactory": 4.6,
+      "Visual": 3.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ammonia",
+    "sentence": "The scent of the ammonia was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 0.45,
+      "Haptic": 0.6,
+      "Interoceptive": 0.5,
+      "Olfactory": 4.6,
+      "Visual": 3.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "ammonia",
+    "sentence": "They discussed the ammonia at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.35,
+      "Gustatory": 0.45,
+      "Haptic": 0.6,
+      "Interoceptive": 0.5,
+      "Olfactory": 4.6,
+      "Visual": 3.05
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "There was cinnamon everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "The scent of the cinnamon was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "cinnamon",
+    "sentence": "They discussed the cinnamon at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.133333333,
+      "Gustatory": 4.333333333,
+      "Haptic": 1.2,
+      "Interoceptive": 0.733333333,
+      "Olfactory": 3.066666667,
+      "Visual": 2.066666667
+    },
+    "in_norms": true
+  },
+  {
+    "word": "campfire",
+    "sentence": "The campfire drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 2.5,
+      "Gustatory": 0.0,
+      "Haptic": 0.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 4.5
+    },
+    "in_norms": true
+  },
+  {
+    "word": "campfire",
+    "sentence": "The campfire smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 2.5,
+      "Gustatory": 0.0,
+      "Haptic": 0.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 4.5
+    },
+    "in_norms": true
+  },
+  {
+    "word": "campfire",
+    "sentence": "The campfire was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 2.5,
+      "Gustatory": 0.0,
+      "Haptic": 0.9375,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 4.5
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mildew",
+    "sentence": "There was mildew everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.0,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.166666667,
+      "Olfactory": 2.166666667,
+      "Visual": 3.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mildew",
+    "sentence": "The scent of the mildew was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.0,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.166666667,
+      "Olfactory": 2.166666667,
+      "Visual": 3.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mildew",
+    "sentence": "They discussed the mildew at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.0,
+      "Haptic": 0.833333333,
+      "Interoceptive": 0.166666667,
+      "Olfactory": 2.166666667,
+      "Visual": 3.277777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eucalyptus",
+    "sentence": "There was eucalyptus everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0625,
+      "Gustatory": 2.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 3.25
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eucalyptus",
+    "sentence": "The scent of the eucalyptus was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0625,
+      "Gustatory": 2.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 3.25
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eucalyptus",
+    "sentence": "They discussed the eucalyptus at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0625,
+      "Gustatory": 2.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.25,
+      "Olfactory": 3.1875,
+      "Visual": 3.25
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chlorine",
+    "sentence": "The chlorine drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.166666667,
+      "Gustatory": 1.444444444,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 4.055555556,
+      "Visual": 1.111111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chlorine",
+    "sentence": "The chlorine smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.166666667,
+      "Gustatory": 1.444444444,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 4.055555556,
+      "Visual": 1.111111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "chlorine",
+    "sentence": "The chlorine was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.166666667,
+      "Gustatory": 1.444444444,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 4.055555556,
+      "Visual": 1.111111111
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pine",
+    "sentence": "The pine drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.277777778,
+      "Haptic": 2.611111111,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 3.888888889,
+      "Visual": 4.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pine",
+    "sentence": "The pine smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.277777778,
+      "Haptic": 2.611111111,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 3.888888889,
+      "Visual": 4.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "pine",
+    "sentence": "The pine was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.277777778,
+      "Haptic": 2.611111111,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 3.888888889,
+      "Visual": 4.388888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sulfur",
+    "sentence": "The sulfur lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.666666667,
+      "Haptic": 0.944444444,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 4.277777778,
+      "Visual": 1.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sulfur",
+    "sentence": "You could smell the sulfur from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.666666667,
+      "Haptic": 0.944444444,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 4.277777778,
+      "Visual": 1.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sulfur",
+    "sentence": "The sulfur was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.333333333,
+      "Gustatory": 0.666666667,
+      "Haptic": 0.944444444,
+      "Interoceptive": 0.277777778,
+      "Olfactory": 4.277777778,
+      "Visual": 1.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sage",
+    "sentence": "The sage drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.666666667,
+      "Gustatory": 2.0,
+      "Haptic": 1.111111111,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.333333333,
+      "Visual": 2.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sage",
+    "sentence": "The sage smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.666666667,
+      "Gustatory": 2.0,
+      "Haptic": 1.111111111,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.333333333,
+      "Visual": 2.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sage",
+    "sentence": "The sage was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.666666667,
+      "Gustatory": 2.0,
+      "Haptic": 1.111111111,
+      "Interoceptive": 0.0,
+      "Olfactory": 2.333333333,
+      "Visual": 2.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "onion",
+    "sentence": "There was onion everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 4.45,
+      "Haptic": 2.8,
+      "Interoceptive": 0.75,
+      "Olfactory": 4.25,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "onion",
+    "sentence": "The scent of the onion was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 4.45,
+      "Haptic": 2.8,
+      "Interoceptive": 0.75,
+      "Olfactory": 4.25,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "onion",
+    "sentence": "They discussed the onion at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.3,
+      "Gustatory": 4.45,
+      "Haptic": 2.8,
+      "Interoceptive": 0.75,
+      "Olfactory": 4.25,
+      "Visual": 4.0
+    },
+    "in_norms": true
+  },
+  {
+    "word": "basil",
+    "sentence": "The basil drifted through the open window.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 4.2,
+      "Haptic": 1.65,
+      "Interoceptive": 0.3,
+      "Olfactory": 3.1,
+      "Visual": 3.2
+    },
+    "in_norms": true
+  },
+  {
+    "word": "basil",
+    "sentence": "The basil smelled incredibly strong and pungent.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 4.2,
+      "Haptic": 1.65,
+      "Interoceptive": 0.3,
+      "Olfactory": 3.1,
+      "Visual": 3.2
+    },
+    "in_norms": true
+  },
+  {
+    "word": "basil",
+    "sentence": "The basil was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.25,
+      "Gustatory": 4.2,
+      "Haptic": 1.65,
+      "Interoceptive": 0.3,
+      "Olfactory": 3.1,
+      "Visual": 3.2
+    },
+    "in_norms": true
+  },
+  {
+    "word": "oregano",
+    "sentence": "The oregano lingered in the hallway near the entrance.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.315789474,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 3.736842105,
+      "Visual": 3.421052632
+    },
+    "in_norms": true
+  },
+  {
+    "word": "oregano",
+    "sentence": "You could smell the oregano from across the entire room.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.315789474,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 3.736842105,
+      "Visual": 3.421052632
+    },
+    "in_norms": true
+  },
+  {
+    "word": "oregano",
+    "sentence": "The oregano was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 4.315789474,
+      "Haptic": 1.631578947,
+      "Interoceptive": 0.315789474,
+      "Olfactory": 3.736842105,
+      "Visual": 3.421052632
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "There was mint everywhere in the old house.",
+    "condition": "implicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "The scent of the mint was impossible to ignore.",
+    "condition": "explicit",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mint",
+    "sentence": "They discussed the mint at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Olfactory",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 4.705882353,
+      "Haptic": 1.176470588,
+      "Interoceptive": 0.470588235,
+      "Olfactory": 3.823529412,
+      "Visual": 2.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rainbow",
+    "sentence": "The rainbow appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rainbow",
+    "sentence": "The rainbow looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "rainbow",
+    "sentence": "The rainbow was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.684210526
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sunset",
+    "sentence": "The sunset was visible even from miles away.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.277777778,
+      "Haptic": 0.611111111,
+      "Interoceptive": 1.0,
+      "Olfactory": 0.444444444,
+      "Visual": 4.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sunset",
+    "sentence": "The sunset appeared bright and vivid against the sky.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.277777778,
+      "Haptic": 0.611111111,
+      "Interoceptive": 1.0,
+      "Olfactory": 0.444444444,
+      "Visual": 4.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sunset",
+    "sentence": "The sunset was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.277777778,
+      "Gustatory": 0.277777778,
+      "Haptic": 0.611111111,
+      "Interoceptive": 1.0,
+      "Olfactory": 0.444444444,
+      "Visual": 4.722222222
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lightning",
+    "sentence": "The lightning appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.052631579,
+      "Haptic": 0.526315789,
+      "Interoceptive": 0.894736842,
+      "Olfactory": 0.473684211,
+      "Visual": 4.105263158
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lightning",
+    "sentence": "The lightning looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.052631579,
+      "Haptic": 0.526315789,
+      "Interoceptive": 0.894736842,
+      "Olfactory": 0.473684211,
+      "Visual": 4.105263158
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lightning",
+    "sentence": "The lightning was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.631578947,
+      "Gustatory": 0.052631579,
+      "Haptic": 0.526315789,
+      "Interoceptive": 0.894736842,
+      "Olfactory": 0.473684211,
+      "Visual": 4.105263158
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fireworks",
+    "sentence": "A fireworks caught their attention from across the field.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 4.588235294,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.294117647,
+      "Interoceptive": 1.0,
+      "Olfactory": 1.882352941,
+      "Visual": 4.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fireworks",
+    "sentence": "The sight of the fireworks was absolutely breathtaking.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 4.588235294,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.294117647,
+      "Interoceptive": 1.0,
+      "Olfactory": 1.882352941,
+      "Visual": 4.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "fireworks",
+    "sentence": "They discussed the fireworks at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 4.588235294,
+      "Gustatory": 0.117647059,
+      "Haptic": 1.294117647,
+      "Interoceptive": 1.0,
+      "Olfactory": 1.882352941,
+      "Visual": 4.823529412
+    },
+    "in_norms": true
+  },
+  {
+    "word": "diamond",
+    "sentence": "The diamond appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.157894737,
+      "Gustatory": 0.0,
+      "Haptic": 2.684210526,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.0,
+      "Visual": 3.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "diamond",
+    "sentence": "The diamond looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.157894737,
+      "Gustatory": 0.0,
+      "Haptic": 2.684210526,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.0,
+      "Visual": 3.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "diamond",
+    "sentence": "The diamond was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.157894737,
+      "Gustatory": 0.0,
+      "Haptic": 2.684210526,
+      "Interoceptive": 0.473684211,
+      "Olfactory": 0.0,
+      "Visual": 3.210526316
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mirror",
+    "sentence": "The mirror appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.777777778,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mirror",
+    "sentence": "The mirror looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.777777778,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "mirror",
+    "sentence": "The mirror was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 1.777777778,
+      "Interoceptive": 0.0,
+      "Olfactory": 0.0,
+      "Visual": 4.833333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crystal",
+    "sentence": "The crystal appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 0.388888889,
+      "Haptic": 1.888888889,
+      "Interoceptive": 0.388888889,
+      "Olfactory": 0.166666667,
+      "Visual": 3.333333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crystal",
+    "sentence": "The crystal looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 0.388888889,
+      "Haptic": 1.888888889,
+      "Interoceptive": 0.388888889,
+      "Olfactory": 0.166666667,
+      "Visual": 3.333333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "crystal",
+    "sentence": "The crystal was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.555555556,
+      "Gustatory": 0.388888889,
+      "Haptic": 1.888888889,
+      "Interoceptive": 0.388888889,
+      "Olfactory": 0.166666667,
+      "Visual": 3.333333333
+    },
+    "in_norms": true
+  },
+  {
+    "word": "flame",
+    "sentence": "The flame appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.65,
+      "Gustatory": 0.15,
+      "Haptic": 2.35,
+      "Interoceptive": 0.75,
+      "Olfactory": 1.5,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "flame",
+    "sentence": "The flame looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.65,
+      "Gustatory": 0.15,
+      "Haptic": 2.35,
+      "Interoceptive": 0.75,
+      "Olfactory": 1.5,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "flame",
+    "sentence": "The flame was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.65,
+      "Gustatory": 0.15,
+      "Haptic": 2.35,
+      "Interoceptive": 0.75,
+      "Olfactory": 1.5,
+      "Visual": 4.65
+    },
+    "in_norms": true
+  },
+  {
+    "word": "spotlight",
+    "sentence": "A spotlight caught their attention from across the field.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.388888889,
+      "Gustatory": 0.0,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 3.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "spotlight",
+    "sentence": "The sight of the spotlight was absolutely breathtaking.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.388888889,
+      "Gustatory": 0.0,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 3.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "spotlight",
+    "sentence": "They discussed the spotlight at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.388888889,
+      "Gustatory": 0.0,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 3.888888889
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lantern",
+    "sentence": "The lantern appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.523809524,
+      "Gustatory": 0.19047619,
+      "Haptic": 2.666666667,
+      "Interoceptive": 0.047619048,
+      "Olfactory": 0.428571429,
+      "Visual": 4.619047619
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lantern",
+    "sentence": "The lantern looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.523809524,
+      "Gustatory": 0.19047619,
+      "Haptic": 2.666666667,
+      "Interoceptive": 0.047619048,
+      "Olfactory": 0.428571429,
+      "Visual": 4.619047619
+    },
+    "in_norms": true
+  },
+  {
+    "word": "lantern",
+    "sentence": "The lantern was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.523809524,
+      "Gustatory": 0.19047619,
+      "Haptic": 2.666666667,
+      "Interoceptive": 0.047619048,
+      "Olfactory": 0.428571429,
+      "Visual": 4.619047619
+    },
+    "in_norms": true
+  },
+  {
+    "word": "aurora",
+    "sentence": "A aurora caught their attention from across the field.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.0,
+      "Visual": 4.235294118
+    },
+    "in_norms": true
+  },
+  {
+    "word": "aurora",
+    "sentence": "The sight of the aurora was absolutely breathtaking.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.0,
+      "Visual": 4.235294118
+    },
+    "in_norms": true
+  },
+  {
+    "word": "aurora",
+    "sentence": "They discussed the aurora at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 0.058823529,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.0,
+      "Visual": 4.235294118
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eclipse",
+    "sentence": "A eclipse caught their attention from across the field.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.136363636,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.136363636,
+      "Olfactory": 0.045454545,
+      "Visual": 4.454545455
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eclipse",
+    "sentence": "The sight of the eclipse was absolutely breathtaking.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.136363636,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.136363636,
+      "Olfactory": 0.045454545,
+      "Visual": 4.454545455
+    },
+    "in_norms": true
+  },
+  {
+    "word": "eclipse",
+    "sentence": "They discussed the eclipse at the afternoon meeting.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.136363636,
+      "Gustatory": 0.0,
+      "Haptic": 0.0,
+      "Interoceptive": 0.136363636,
+      "Olfactory": 0.045454545,
+      "Visual": 4.454545455
+    },
+    "in_norms": true
+  },
+  {
+    "word": "prism",
+    "sentence": "The prism appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.769230769,
+      "Gustatory": 0.384615385,
+      "Haptic": 0.769230769,
+      "Interoceptive": 0.384615385,
+      "Olfactory": 0.384615385,
+      "Visual": 4.384615385
+    },
+    "in_norms": true
+  },
+  {
+    "word": "prism",
+    "sentence": "The prism looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.769230769,
+      "Gustatory": 0.384615385,
+      "Haptic": 0.769230769,
+      "Interoceptive": 0.384615385,
+      "Olfactory": 0.384615385,
+      "Visual": 4.384615385
+    },
+    "in_norms": true
+  },
+  {
+    "word": "prism",
+    "sentence": "The prism was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.769230769,
+      "Gustatory": 0.384615385,
+      "Haptic": 0.769230769,
+      "Interoceptive": 0.384615385,
+      "Olfactory": 0.384615385,
+      "Visual": 4.384615385
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sparkle",
+    "sentence": "The sparkle appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.1,
+      "Haptic": 0.15,
+      "Interoceptive": 0.15,
+      "Olfactory": 0.1,
+      "Visual": 4.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sparkle",
+    "sentence": "The sparkle looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.1,
+      "Haptic": 0.15,
+      "Interoceptive": 0.15,
+      "Olfactory": 0.1,
+      "Visual": 4.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "sparkle",
+    "sentence": "The sparkle was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.5,
+      "Gustatory": 0.1,
+      "Haptic": 0.15,
+      "Interoceptive": 0.15,
+      "Olfactory": 0.1,
+      "Visual": 4.45
+    },
+    "in_norms": true
+  },
+  {
+    "word": "shadow",
+    "sentence": "The shadow appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.176470588,
+      "Haptic": 0.235294118,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.294117647,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "shadow",
+    "sentence": "The shadow looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.176470588,
+      "Haptic": 0.235294118,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.294117647,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "shadow",
+    "sentence": "The shadow was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.058823529,
+      "Gustatory": 0.176470588,
+      "Haptic": 0.235294118,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 0.294117647,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silhouette",
+    "sentence": "The silhouette was visible even from miles away.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.0,
+      "Visual": 4.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silhouette",
+    "sentence": "The silhouette appeared bright and vivid against the sky.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.0,
+      "Visual": 4.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "silhouette",
+    "sentence": "The silhouette was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.235294118,
+      "Olfactory": 0.0,
+      "Visual": 4.705882353
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beacon",
+    "sentence": "The beacon was visible even from miles away.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.8125,
+      "Gustatory": 0.0625,
+      "Haptic": 0.1875,
+      "Interoceptive": 0.1875,
+      "Olfactory": 0.1875,
+      "Visual": 3.8125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beacon",
+    "sentence": "The beacon appeared bright and vivid against the sky.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.8125,
+      "Gustatory": 0.0625,
+      "Haptic": 0.1875,
+      "Interoceptive": 0.1875,
+      "Olfactory": 0.1875,
+      "Visual": 3.8125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "beacon",
+    "sentence": "The beacon was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.8125,
+      "Gustatory": 0.0625,
+      "Haptic": 0.1875,
+      "Interoceptive": 0.1875,
+      "Olfactory": 0.1875,
+      "Visual": 3.8125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glitter",
+    "sentence": "The glitter was visible even from miles away.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.0,
+      "Visual": 4.473684211
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glitter",
+    "sentence": "The glitter appeared bright and vivid against the sky.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.0,
+      "Visual": 4.473684211
+    },
+    "in_norms": true
+  },
+  {
+    "word": "glitter",
+    "sentence": "The glitter was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.0,
+      "Gustatory": 0.0,
+      "Haptic": 2.0,
+      "Interoceptive": 0.105263158,
+      "Olfactory": 0.0,
+      "Visual": 4.473684211
+    },
+    "in_norms": true
+  },
+  {
+    "word": "neon",
+    "sentence": "The neon appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 0.029411765,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.264705882,
+      "Olfactory": 0.117647059,
+      "Visual": 4.676470588
+    },
+    "in_norms": true
+  },
+  {
+    "word": "neon",
+    "sentence": "The neon looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 0.029411765,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.264705882,
+      "Olfactory": 0.117647059,
+      "Visual": 4.676470588
+    },
+    "in_norms": true
+  },
+  {
+    "word": "neon",
+    "sentence": "The neon was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.411764706,
+      "Gustatory": 0.029411765,
+      "Haptic": 0.294117647,
+      "Interoceptive": 0.264705882,
+      "Olfactory": 0.117647059,
+      "Visual": 4.676470588
+    },
+    "in_norms": true
+  },
+  {
+    "word": "kaleidoscope",
+    "sentence": "The kaleidoscope appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.125,
+      "Gustatory": 0.0,
+      "Haptic": 1.6875,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "kaleidoscope",
+    "sentence": "The kaleidoscope looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.125,
+      "Gustatory": 0.0,
+      "Haptic": 1.6875,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "kaleidoscope",
+    "sentence": "The kaleidoscope was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.125,
+      "Gustatory": 0.0,
+      "Haptic": 1.6875,
+      "Interoceptive": 0.5,
+      "Olfactory": 0.0,
+      "Visual": 4.3125
+    },
+    "in_norms": true
+  },
+  {
+    "word": "star",
+    "sentence": "The star appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.833333333,
+      "Gustatory": 0.111111111,
+      "Haptic": 0.166666667,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.166666667,
+      "Visual": 4.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "star",
+    "sentence": "The star looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.833333333,
+      "Gustatory": 0.111111111,
+      "Haptic": 0.166666667,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.166666667,
+      "Visual": 4.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "star",
+    "sentence": "The star was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.833333333,
+      "Gustatory": 0.111111111,
+      "Haptic": 0.166666667,
+      "Interoceptive": 0.611111111,
+      "Olfactory": 0.166666667,
+      "Visual": 4.444444444
+    },
+    "in_norms": true
+  },
+  {
+    "word": "moon",
+    "sentence": "The moon appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 4.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "moon",
+    "sentence": "The moon looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 4.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "moon",
+    "sentence": "The moon was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.111111111,
+      "Gustatory": 0.055555556,
+      "Haptic": 0.222222222,
+      "Interoceptive": 0.222222222,
+      "Olfactory": 0.055555556,
+      "Visual": 4.777777778
+    },
+    "in_norms": true
+  },
+  {
+    "word": "candle",
+    "sentence": "The candle appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.352941176,
+      "Gustatory": 0.058823529,
+      "Haptic": 2.176470588,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 3.823529412,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "candle",
+    "sentence": "The candle looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.352941176,
+      "Gustatory": 0.058823529,
+      "Haptic": 2.176470588,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 3.823529412,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "candle",
+    "sentence": "The candle was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.352941176,
+      "Gustatory": 0.058823529,
+      "Haptic": 2.176470588,
+      "Interoceptive": 0.411764706,
+      "Olfactory": 3.823529412,
+      "Visual": 4.647058824
+    },
+    "in_norms": true
+  },
+  {
+    "word": "laser",
+    "sentence": "The laser appeared just above the horizon.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.315789474,
+      "Gustatory": 0.105263158,
+      "Haptic": 0.947368421,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.315789474,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "laser",
+    "sentence": "The laser looked stunningly beautiful in the light.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.315789474,
+      "Gustatory": 0.105263158,
+      "Haptic": 0.947368421,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.315789474,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "laser",
+    "sentence": "The laser was mentioned briefly in the report.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 1.315789474,
+      "Gustatory": 0.105263158,
+      "Haptic": 0.947368421,
+      "Interoceptive": 0.263157895,
+      "Olfactory": 0.315789474,
+      "Visual": 4.052631579
+    },
+    "in_norms": true
+  },
+  {
+    "word": "torch",
+    "sentence": "The torch was visible even from miles away.",
+    "condition": "implicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.117647059,
+      "Olfactory": 0.882352941,
+      "Visual": 4.117647059
+    },
+    "in_norms": true
+  },
+  {
+    "word": "torch",
+    "sentence": "The torch appeared bright and vivid against the sky.",
+    "condition": "explicit",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.117647059,
+      "Olfactory": 0.882352941,
+      "Visual": 4.117647059
+    },
+    "in_norms": true
+  },
+  {
+    "word": "torch",
+    "sentence": "The torch was listed in the official document.",
+    "condition": "control",
+    "dominant_sense": "Visual",
+    "sense_scores": {
+      "Auditory": 0.235294118,
+      "Gustatory": 0.0,
+      "Haptic": 1.705882353,
+      "Interoceptive": 0.117647059,
+      "Olfactory": 0.882352941,
+      "Visual": 4.117647059
+    },
+    "in_norms": true
+  }
+]
